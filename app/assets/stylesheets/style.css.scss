@@ -1,0 +1,259 @@
+@font-face {
+  font-family: 'a_CityNova';
+  src: font-url('a-citynova.eot');
+}
+@font-face {
+  font-family: 'a_CityNova';
+  src: font-url('a-citynova.woff') format('woff'),
+  font-url('a-citynova.svg#ACityNova') format('svg');
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: font-url('MyriadPro-Regular.eot');
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: font-url('MyriadPro-Regular.woff') format('woff'),
+  font-url('MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+}
+
+html, body {
+  min-width: 1160px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  &:hover {
+    border-bottom: 1px solid rgb(48, 48, 48);
+  }
+}
+
+h1, nav, .nav {
+  font-family: 'a_CityNova';
+  text-transform: uppercase;
+  color: rgb(48, 48, 48);
+}
+nav, .nav {
+  font-size: 1.3em;
+  li {
+    margin-bottom: 6px;
+  }
+}
+
+h2, h3, .info-block, p {
+  font-family: 'MyriadPro-Regular';
+}
+
+h1 {
+  padding: 0.4em 0;
+  font-size: 3em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 0.9em;
+}
+.info-block {
+  .status {
+    font-size: 0.7em;
+  }
+  .phone {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+}
+p {
+  font-size: 0.9em;
+}
+
+header {
+  height: 305px;
+  position: relative;
+  .header {
+    position: absolute;
+    top: 144px;
+    left: 50%;
+    margin: -50px 0 0 -300px;
+    .info-block {
+      margin-left: 55px;
+      position: relative;
+      top: 7px;
+      height: 35px;
+      padding-top: 10px;
+    }
+  }
+  .logo-brp-big {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+  }
+}
+
+header nav {
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+  display: table;
+  ul {
+    display: table-row;
+    li {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 147px;
+    }
+  }
+  ::before, ::after {
+    width: 50%;
+    content: "";
+  }
+}
+
+.navigation-svg {
+  width: 100%;
+  display: table;
+  bottom: 0;
+  position: absolute;
+  .row {
+    display: table-row;
+    .cell {
+      display: table-cell;
+      object {
+        width: 100%;
+      }
+    }
+    .mid {
+      width: 618px !important;
+    }
+    &:first-child, &:last-child {
+      width: 50%;
+    }
+  }
+}
+#navigation, #navigation-left, #navigation-right {
+  height: 80px;
+}
+
+#events, #brands, #about, #contacts, #footer {
+  position: absolute;
+  z-index: -1;
+//  margin: 0 -640px;
+//  left: 50%;
+  width: 100%;
+}
+#events {
+  height: 84px;
+}
+.brands {
+  object {
+    height: 85px;
+  }
+  .spacing {
+    display: table-cell;
+    width: 20px;
+  }
+  .cell {
+    .header {
+      position: relative;
+      .logo {
+        position: absolute;
+        bottom: 28px;
+        right: 0;
+        h3 {
+          max-width: 12em;
+          text-align: right;
+        }
+        div {
+          clear: both;
+        }
+      }
+    }
+  }
+}
+#about {
+  height: 93px;
+}
+.about {
+  .header {
+    width: 350px;
+    float: left;
+  }
+}
+
+#contacts {
+  height: 84px;
+}
+#footer {
+  height: 261px;
+}
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.btcf:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.lborder {
+  padding-left: 15px;
+  border-left: 1px solid rgb(48, 48, 48);
+}
+
+.list {
+  display: table;
+  table-layout: fixed;
+//  width: 1160px;
+  .row {
+    display: table-row;
+//    height: 300px;
+    .cell {
+      display: table-cell;
+//      width: auto;
+    }
+  }
+}
+
+main, footer {
+  position: relative;
+}
+
+header, main {
+  z-index: 1;
+}
+
+.carousel {
+  display: block;
+  height: 400px;
+  margin: -30px 0 -12px 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+footer .content {
+  position: relative;
+  top: 80px;
+}
+.content {
+  width: 1160px;
+  margin: 30px auto 0;
+  background-color: green;
+}
+
+.brp-news, .our-news {
+  height: 648px;
+  width: 560px;
+}
+
+.map {
+  height: 798px;
+}

@@ -1,0 +1,15 @@
+<svg width="1280" height="261" viewBox="0 0 1280 261" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+ <g>
+  <polygon id="svg_2" points="920,12 914,261 945,261 945,21    " fill="#D6B000"/>
+  <polygon id="left" points="0,30.5 0,260.5 326.041,261 327,0    " fill="#FFD204"/>
+  <polygon id="right" points="945,21 945,261 1280,261 1280,40.887    " fill="#FFD204"/>
+  <polygon id="svg_8" points="511,11 479,23 482,261 513.918,261    " fill="#D6B000"/>
+  <polygon id="svg_10" points="327,0 326.041,261 356.044,261 367,12    " fill="#D6B000"/>
+  <polygon id="svg_12" points="628,22 602,25 601,261 629,261    " fill="#D6B000"/>
+  <polygon id="svg_14" points="799,19 783,15 774.072,261 808,261    " fill="#D6B000"/>
+  <polygon id="svg_16" points="479,23 367,12 356.044,261 482,261    " fill="#FFD204"/>
+  <polygon id="svg_18" points="511,11 513.918,261 601,261 602,25    " fill="#FFD204"/>
+  <polygon id="svg_20" points="627,22 629,261 774.072,261 783,15    " fill="#FFD204"/>
+  <polygon id="svg_22" points="799,19 808,261 914,261 920,12    " fill="#FFD204"/>
+ </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="618" height="80" viewBox="0 0 618 80" preserveAspectRatio="XMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <polygon points="593 12 587 67 618 55 618 22" fill="#D6B000" id="svg_2"/>
+  <polygon points="184 11 152 23 155 56 187 60" fill="#D6B000" id="svg_8"/>
+  <polygon points="0 0 0 80 29 70 40 12" fill="#D6B000" id="svg_10"/>
+  <polygon points="301 22 275 25 274 59 302 54" fill="#D6B000" id="svg_12"/>
+  <polygon points="472 19 456 15 447 54 482 53" fill="#D6B000" id="svg_14"/>
+  <polygon points="152 23 40 12 28.146 70.285 155 56" fill="#FFD204" id="svg_16"/>
+  <polygon points="184 11 187 60 274 59 275 25" fill="#FFD204" id="svg_18"/>
+  <polygon points="301 22 302 54 447 54 456 15" fill="#FFD204" id="svg_20"/>
+  <polygon points="472 19 481 53 587 67 593 12" fill="#FFD204" id="svg_22"/>
+ </g>
+</svg>
