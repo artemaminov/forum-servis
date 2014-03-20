@@ -49,6 +49,8 @@ h1 {
   padding: 0.4em 0;
   font-size: 3em;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 h2 {
   font-size: 1.5em;
@@ -139,9 +141,7 @@ header nav {
 
 #events, #brands, #about, #contacts, #footer {
   position: absolute;
-  z-index: -1;
-//  margin: 0 -640px;
-//  left: 50%;
+  z-index: 1;
   width: 100%;
 }
 #events {
@@ -212,13 +212,10 @@ header nav {
 .list {
   display: table;
   table-layout: fixed;
-//  width: 1160px;
   .row {
     display: table-row;
-//    height: 300px;
     .cell {
       display: table-cell;
-//      width: auto;
     }
   }
 }
@@ -227,7 +224,7 @@ main, footer {
   position: relative;
 }
 
-header, main {
+header, main, footer {
   z-index: 1;
 }
 
@@ -246,7 +243,8 @@ footer .content {
 .content {
   width: 1160px;
   margin: 30px auto 0;
-  background-color: green;
+//  background-color: green;
+  z-index: 1;
 }
 
 .brp-news, .our-news {
@@ -256,4 +254,10 @@ footer .content {
 
 .map {
   height: 798px;
+  position: relative;
+  margin: -24px 0 -70px 0;
+  overflow: hidden;
+  #widget {
+    width: 100% !important;
+  }
 }
