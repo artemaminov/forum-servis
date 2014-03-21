@@ -288,9 +288,7 @@
     <object data="assets/contacts.svg" type="image/svg+xml" id="contacts"></object>
     <h1>Контакты</h1>
     <div class="map">
-      <script charset="utf-8" type="text/javascript" src="http://firmsonmap.api.2gis.ru/js/DGWidgetLoader.js"></script>
-      <script charset="utf-8" type="text/javascript">new DGWidgetLoader({"borderColor":"white","width":"100%","height":"798","wid":"7b38b199155373385a2225cb82035307","pos":{"lon":"65.606374534373","lat":"57.137973599076","zoom":"13"},"opt":{"ref":"hidden","card":["name","contacts","schedule","payings"],"city":"tyumen"},"org":[{"id":"1830115629606203","hash":"8dBCqa34234IJ1HJc147uvgc18630J345e6786039909B295f34369G41J0I96228A"},{"id":"1830116630136332","hash":"8c5Cqa34363IJ1HJc16guvgc19640J345e6786030439B295f54469G42J0I962288"}]});</script>
-      <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+      <div id="gis-map"></div>
     </div>
     <div class="card">
       <div class="text">
@@ -319,5 +317,52 @@
   </div>
 </footer>
 
+<script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
+<script type="text/javascript">
+  DG.autoload(function() {
+    var myMap = new DG.Map('gis-map');
+    myMap.setCenter(new DG.GeoPoint(65.606374534373,57.137973599076),13);
+    myMap.controls.add(new DG.Controls.Zoom());
+    var b1 = new DG.Balloons.Common({
+      geoPoint: new DG.GeoPoint(65.666528, 57.164327),
+      contentHtml: 'Форум-Сервис'
+    });
+    var m1 = new DG.Markers.Common({
+      geoPoint: new DG.GeoPoint(65.666528, 57.164327),
+      icon: new DG.Icon(
+          'assets/pin.png',
+          new DG.Size(48, 64)
+      ),
+      clickCallback: function() {
+        if (! myMap.balloons.getDefaultGroup().contains(b1)) {
+          myMap.balloons.add(b1);
+        } else {
+          b1.show();
+        }
+      }
+    });
+
+    var b2 = new DG.Balloons.Common({
+      geoPoint: new DG.GeoPoint(65.546221, 57.111602),
+      contentHtml: 'Форум-Сервис'
+    });
+    var m2 = new DG.Markers.Common({
+      geoPoint: new DG.GeoPoint(65.546221, 57.111602),
+      icon: new DG.Icon(
+          'assets/pin.png',
+          new DG.Size(48, 64)
+      ),
+      clickCallback: function() {
+        if (! myMap.balloons.getDefaultGroup().contains(b2)) {
+          myMap.balloons.add(b2);
+        } else {
+          b2.show();
+        }
+      }
+    });
+    myMap.markers.add(m1);
+    myMap.markers.add(m2);
+  });
+</script>
 </body>
 </html>

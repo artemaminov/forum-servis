@@ -19,6 +19,7 @@
 
 html, body {
   min-width: 1160px;
+  color: rgb(48, 48, 48);
 }
 
 section {
@@ -37,7 +38,6 @@ a {
 h1, nav, .nav {
   font-family: 'a_CityNova';
   text-transform: uppercase;
-  color: rgb(48, 48, 48);
 }
 nav, .nav {
   font-size: 1.3em;
@@ -212,6 +212,16 @@ header nav {
   height: 84px;
 }
 .contacts {
+  .map {
+    height: 798px;
+    position: relative;
+    margin: -24px 0 -70px 0;
+    overflow: hidden;
+    z-index: 0;
+    #gis-map {
+      height: 100%;
+    }
+  }
   .card {
     position: absolute;
     top: 50%;
@@ -222,6 +232,7 @@ header nav {
     text-align: center;
     height: 210px;
     border: 8px solid rgb(255, 210, 4);
+    z-index: 10000;
     .text {
       margin: auto;
       position: absolute;
@@ -247,6 +258,28 @@ header nav {
 }
 #footer {
   height: 261px;
+}
+footer .content {
+  position: relative;
+  top: 80px;
+  .copyright {
+    font-size: 0.7em;
+    width: 16em;
+    border-top: 1px solid rgb(48, 48, 48);;
+    padding-top: 4px;
+    position: relative;
+    top: 40px;
+    float: left;
+  }
+  .metrica {
+    position: relative;
+    float: right;
+  }
+  .logo-spaceheads {
+    position: relative;
+    top: 40px;
+    float: right;
+  }
 }
 
 .fleft {
@@ -300,10 +333,6 @@ header, main, footer {
   width: 20px;
 }
 
-footer .content {
-  position: relative;
-  top: 80px;
-}
 .content {
   width: 1080px;
   margin: 30px auto 0;
@@ -315,14 +344,4 @@ footer .content {
 .brp-news, .our-news {
   height: 648px;
   width: 520px;
-}
-
-.map {
-  height: 798px;
-  position: relative;
-  margin: -24px 0 -70px 0;
-  overflow: hidden;
-  #widget {
-    width: 100% !important;
-  }
 }
