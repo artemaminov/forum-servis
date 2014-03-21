@@ -21,6 +21,11 @@ html, body {
   min-width: 1160px;
 }
 
+section {
+  margin-top: 30px;
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: rgb(48, 48, 48);
@@ -151,10 +156,6 @@ header nav {
   object {
     height: 85px;
   }
-  .spacing {
-    display: table-cell;
-    width: 20px;
-  }
   .cell {
     .header {
       position: relative;
@@ -180,11 +181,69 @@ header nav {
   .header {
     width: 350px;
     float: left;
+    .body {
+      margin-top: 32px;
+    }
+  }
+  .icons {
+    margin-left: 430px;
+    .list {
+      width: 100%;
+      .cell {
+        width: 25%;
+        text-align: center;
+        i {
+          display: inline-block;
+        }
+        div {
+          display: inline-block;
+          margin-top: 5px;
+          p {
+            text-align: left;
+            font-size: 0.75em;
+          }
+        }
+      }
+    }
   }
 }
 
 #contacts {
   height: 84px;
+}
+.contacts {
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -240px;
+    width: 480px;
+    background-color: white;
+    text-align: center;
+    height: 210px;
+    border: 8px solid rgb(255, 210, 4);
+    .text {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 170px;
+      display: block;
+      p {
+        font-family: 'a_CityNova';
+        font-size: 2em;
+        &:first-child {
+          margin-bottom: 20px;
+          font-size: 2.5em;
+        }
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
 #footer {
   height: 261px;
@@ -231,9 +290,14 @@ header, main, footer {
 .carousel {
   display: block;
   height: 400px;
-  margin: -30px 0 -12px 0;
+  margin: -30px 0 -42px 0;
   z-index: -1;
   overflow: hidden;
+}
+
+.spacing {
+  display: table-cell;
+  width: 20px;
 }
 
 footer .content {
@@ -241,15 +305,16 @@ footer .content {
   top: 80px;
 }
 .content {
-  width: 1160px;
+  width: 1080px;
   margin: 30px auto 0;
 //  background-color: green;
   z-index: 1;
+  padding: 0 40px;
 }
 
 .brp-news, .our-news {
   height: 648px;
-  width: 560px;
+  width: 520px;
 }
 
 .map {
