@@ -30,9 +30,9 @@ section {
 a {
   text-decoration: none;
   color: rgb(48, 48, 48);
-  &:hover {
-    border-bottom: 1px solid rgb(48, 48, 48);
-  }
+}
+.link:hover {
+  text-decoration: underline;
 }
 
 h1, nav, .nav {
@@ -59,6 +59,7 @@ h1 {
 }
 h2 {
   font-size: 1.5em;
+  margin-bottom: 10px;
 }
 h3 {
   font-size: 0.9em;

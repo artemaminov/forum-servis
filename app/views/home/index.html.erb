@@ -9,7 +9,7 @@
     <%= link_to "<img src=\"http://rosan.com#{img_source}\" alt=\"#{title}\"/>".html_safe, link, {target: "_blank", rel: "nofollow"} %>
     <% end %>
     <p class="date"><%= article.published.to_formatted_s(:db) %></p>
-    <p class="title"><%= link_to title, link, {target: "_blank", rel: "nofollow"} %></p>
+    <p class="link title"><%= link_to title, link, {target: "_blank", rel: "nofollow"} %></p>
     <div class="desc"><%= link_to content_tag(:p, strip_tags(description)), link, {target: "_blank", rel: "nofollow"} %></div>
   </div>
   <% end %>
