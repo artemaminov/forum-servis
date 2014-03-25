@@ -1,2 +1,14 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="body">
+  <% @brp_news.each do |article| %>
+  <% description = CGI::unescapeHTML(article.description.force_encoding('utf-8')) %>
+  <% title = article.title.force_encoding('utf-8') %>
+  <% link = article.link %>
+  <% img_source = /(?<=\<img\ssrc\=\"|\')[\w\:\/\.]*(?=\"|\')/i.match description %>
+  <% #unless img_source.nil? %>
+  <img class="rss" src="<%= img_source %>" alt="<%= article %>"/>
+  <% #end %>
+  <p class="date"><%= article.pubDate.to_formatted_s(:db) %></p>
+  <p class="title"><%= link_to title, link %></p>
+  <div class="desc"><%= link_to content_tag(:p, strip_tags(description)), link %></div>
+  <% end %>
+</div>

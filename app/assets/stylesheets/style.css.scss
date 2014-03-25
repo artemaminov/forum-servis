@@ -342,6 +342,13 @@ header, main, footer {
 }
 
 .brp-news, .our-news {
-  height: 648px;
+  height: 600px;
   width: 520px;
+  .body {
+    overflow: scroll;
+    height: 100%;
+    img {
+      border: 5px solid rgb(255, 210, 4);
+    }
+  }
 }
