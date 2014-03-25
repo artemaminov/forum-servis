@@ -23,7 +23,8 @@ end
 
 gem 'jquery-rails'
 
-gem 'simple-rss'
+gem 'feedjira'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

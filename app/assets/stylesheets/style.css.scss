@@ -347,8 +347,25 @@ header, main, footer {
   .body {
     overflow: scroll;
     height: 100%;
-    img {
-      border: 5px solid rgb(255, 210, 4);
+    .item {
+      clear: both;
+      border-bottom: 1px solid #ffd204;
+      margin-bottom: 20px;
+      .date, .title {
+        font-size: 1.1em;
+      }
+      .title {
+        padding-bottom: 10px;
+      }
+      .desc {
+        padding-bottom: 10px;
+      }
+      img {
+        border: 5px solid #ffd204;
+        width: 240px;
+        float: left;
+        margin: 0 10px 10px 0;
+      }
     }
   }
 }
