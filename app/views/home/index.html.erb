@@ -2,15 +2,15 @@
   <% @brp_news.entries.each do |article| %>
   <% description = article.summary %>
   <% title = article.title %>
-  <% link = article.link %>
+  <% link = article.url %>
   <% img_source = /(?<=\<img\ssrc\=\"|\')[\w\:\/\.]*(?=\"|\')/i.match article.yandex %>
   <div class="item">
     <% unless img_source.nil? %>
-    <img src="http://rosan.com<%= img_source %>" alt="<%= title %>"/>
+    <%= link_to "<img src=\"http://rosan.com#{img_source}\" alt=\"#{title}\"/>".html_safe, link, {target: "_blank", rel: "nofollow"} %>
     <% end %>
     <p class="date"><%= article.published.to_formatted_s(:db) %></p>
-    <p class="title"><%= link_to title, link %></p>
-    <div class="desc"><%= link_to content_tag(:p, strip_tags(description)), link %></div>
+    <p class="title"><%= link_to title, link, {target: "_blank", rel: "nofollow"} %></p>
+    <div class="desc"><%= link_to content_tag(:p, strip_tags(description)), link, {target: "_blank", rel: "nofollow"} %></div>
   </div>
   <% end %>
 </div>

@@ -152,11 +152,47 @@ header nav {
 #events {
   height: 84px;
 }
+.brp-news, .our-news {
+  height: 600px;
+  width: 520px;
+  padding-bottom: 40px;
+  .body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    .item {
+      clear: both;
+      border-bottom: 1px solid #ffd204;
+      margin-bottom: 20px;
+      .date, .title {
+        font-size: 1.1em;
+      }
+      .title {
+        padding-bottom: 10px;
+      }
+      .desc {
+        padding-bottom: 10px;
+      }
+      img {
+        border: 5px solid #ffd204;
+        width: 240px;
+        float: left;
+        margin: 0 10px 10px 0;
+      }
+    }
+  }
+}
+
 .brands {
   object {
     height: 85px;
   }
   .cell {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 10px;
+    &:hover {
+      border-bottom: 1px solid rgb(255, 210, 4);
+    }
     .header {
       position: relative;
       .logo {
@@ -331,41 +367,12 @@ header, main, footer {
 .spacing {
   display: table-cell;
   width: 20px;
+  height: 20px;
 }
 
 .content {
   width: 1080px;
   margin: 30px auto 0;
-//  background-color: green;
   z-index: 1;
   padding: 0 40px;
-}
-
-.brp-news, .our-news {
-  height: 600px;
-  width: 520px;
-  .body {
-    overflow: scroll;
-    height: 100%;
-    .item {
-      clear: both;
-      border-bottom: 1px solid #ffd204;
-      margin-bottom: 20px;
-      .date, .title {
-        font-size: 1.1em;
-      }
-      .title {
-        padding-bottom: 10px;
-      }
-      .desc {
-        padding-bottom: 10px;
-      }
-      img {
-        border: 5px solid #ffd204;
-        width: 240px;
-        float: left;
-        margin: 0 10px 10px 0;
-      }
-    }
-  }
 }
