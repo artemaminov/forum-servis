@@ -30,6 +30,7 @@ section {
 a {
   text-decoration: none;
   color: rgb(48, 48, 48);
+  cursor: pointer;
 }
 .link:hover {
   text-decoration: underline;
@@ -317,6 +318,20 @@ footer .content {
     top: 40px;
     float: right;
   }
+}
+
+.up {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 50%;
+  z-index: 1000;
+  margin-right: -53px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 .fleft {

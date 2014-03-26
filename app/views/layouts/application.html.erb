@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<header>
+<header id="top">
   <div class="navigation-svg">
     <div class="row">
       <div class="cell">
@@ -42,10 +42,10 @@
   <div class="logo-brp-big fright"></div>
   <nav>
     <ul>
-      <li><a class="link" href="#events">События</a></li>
-      <li><a class="link" href="#brands">Бренды</a></li>
-      <li><a class="link" href="#about">О компании</a></li>
-      <li><a class="link" href="#contacts">Контакты</a></li>
+      <li><a class="link" onclick="scrollTo('#events')">События</a></li>
+      <li><a class="link" onclick="scrollTo('#brands')">Бренды</a></li>
+      <li><a class="link" onclick="scrollTo('#about')">О компании</a></li>
+      <li><a class="link" onclick="scrollTo('#contacts')">Контакты</a></li>
     </ul>
   </nav>
 </header>
@@ -58,7 +58,6 @@
 </div>
 
 <main>
-  <a name="events"></a>
   <section class="events clear">
     <object data="assets/events.svg" type="image/svg+xml" id="events"></object>
     <h1>События</h1>
@@ -82,7 +81,6 @@
     </div>
   </section>
 
-  <a name="brands"></a>
   <section class="brands clear">
     <object data="assets/brands.svg" type="image/svg+xml" id="brands"></object>
     <h1>Бренды</h1>
@@ -270,7 +268,6 @@
     </div>
   </section>
 
-  <a name="about"></a>
   <section class="about clear">
     <object data="assets/about.svg" type="image/svg+xml" id="about"></object>
     <h1>О компании</h1>
@@ -323,7 +320,6 @@
     </div>
   </section>
 
-  <a name="contacts"></a>
   <section class="contacts clear">
     <object data="assets/contacts.svg" type="image/svg+xml" id="contacts"></object>
     <h1>Контакты</h1>
@@ -345,9 +341,9 @@
   <object data="assets/footer.svg" type="image/svg+xml" id="footer"></object>
   <div class="content">
     <ul class="nav">
-      <li><a class="link" href="#events">События</a></li>
-      <li><a class="link" href="#brands">Бренды</a></li>
-      <li><a class="link" href="#about">О компании</a></li>
+      <li><a class="link" onclick="scrollTo('#events')">События</a></li>
+      <li><a class="link" onclick="scrollTo('#brands')">Бренды</a></li>
+      <li><a class="link" onclick="scrollTo('#about')">О компании</a></li>
     </ul>
     <div class="copyright">
       <p>Copyright © ТСК «Форум-Сервис» 2014 г. Все права защищены.</p>
@@ -356,6 +352,8 @@
     <div class="logo-spaceheads"></div>
   </div>
 </footer>
+
+<a class="up animated" onclick="scrollTo('#top')"></a>
 
 <script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
 <script type="text/javascript">
