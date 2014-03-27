@@ -1,3 +1,13 @@
+<% content_for :carousel do %>
+  <% @banners.each do |banner| %>
+  <div class="item">
+    <h1 class="title"><%= banner.header %></h1>
+    <p class="body"><%= banner.body %></p>
+    <img src="<%= banner.banner.url %>" alt=""/>
+  </div>
+  <% end %>
+<% end %>
+
 <div class="body">
   <% @brp_news.entries.each do |article| %>
   <% description = article.summary %>
