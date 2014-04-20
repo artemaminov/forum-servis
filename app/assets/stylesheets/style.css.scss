@@ -351,11 +351,14 @@ footer .content {
   .metrica {
     position: relative;
     float: right;
+    top: -10px;
+    right: 3px;
   }
   .logo-spaceheads {
     position: relative;
-    top: 40px;
+    top: 1px;
     float: right;
+    clear: both;
   }
 }
 
