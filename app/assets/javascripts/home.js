@@ -1,25 +1,28 @@
 $(document).ready(function () {
     $('#carousel').carouFredSel({
+        scroll: {
+            duration: 1000
+        },
         responsive: true
     });
 
     $(".up").headroom({
         // vertical offset in px before element is first unpinned
-        offset : 600,
+        offset: 600,
         // scroll tolerance in px before state changes
-        tolerance : 100,
+        tolerance: 100,
         // css classes to apply
-        classes : {
+        classes: {
             // when element is initialised
-            initial : "",
+            initial: "",
             // when scrolling up
-            pinned : "",
+            pinned: "",
             // when scrolling down
-            unpinned : "",
+            unpinned: "",
             // when above offset
-            top : "fadeOutDown",
+            top: "fadeOutDown",
             // when below offset
-            notTop : "fadeInUp"
+            notTop: "fadeInUp"
         }
     });
 
@@ -31,5 +34,5 @@ function scrollTo(selector) {
     } else {
         margin = 20
     }
-    $('html, body').animate({ scrollTop:  $(selector).offset().top + margin }, 'slow');
+    $('html, body').animate({ scrollTop: $(selector).offset().top + margin }, 'slow');
 }
