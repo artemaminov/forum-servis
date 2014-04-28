@@ -1,7 +1,7 @@
 <% content_for :carousel do %>
   <% @banners.each do |banner| %>
   <div class="item">
-    <h1 class="title"><%= banner.header %></h1>
+    <h1 class="title"><%= banner.header.html_safe %></h1>
     <p class="body"><%= banner.body %></p>
     <div class="img" style="background-image: url(<%= banner.banner.url %>)"></div>
   </div>
