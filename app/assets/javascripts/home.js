@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#carousel').carouFredSel({
         auto: {
-            timeoutDuration: 1000
+            timeoutDuration: 8000
         },
         responsive: true
     });
