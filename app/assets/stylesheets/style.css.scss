@@ -339,26 +339,49 @@ header nav {
 footer .content {
   position: relative;
   top: 80px;
+  .social {
+    a {
+      display: block;
+      background: url("sprites.png") no-repeat transparent;
+      width: 22px;
+      height: 22px;
+      float: left;
+    }
+    .vk {
+      background-position: -839px -173px;
+      &:hover {
+        background-position: -839px -102px;
+      }
+    }
+    .fb {
+      background-position: -839px -149px;
+      &:hover {
+        background-position: -839px -78px;
+      }
+    }
+    .odnoklassniki {
+      background-position: -839px -125px;
+      &:hover {
+        background-position: -839px -54px;
+      }
+    }
+  }
   .copyright {
     font-size: 0.7em;
     width: 16em;
-    border-top: 1px solid rgb(48, 48, 48);;
+    border-top: 1px solid #303030;
     padding-top: 4px;
-    position: relative;
-    top: 40px;
-    float: left;
+    position: absolute;
+    bottom: -80px;
+    left: 40px;
   }
   .metrica {
-    position: relative;
     float: right;
-    top: -10px;
-    right: 3px;
   }
   .logo-spaceheads {
-    position: relative;
-    top: 1px;
-    float: right;
-    clear: both;
+    position: absolute;
+    bottom: -89px;
+    right: 40px;
   }
 }
 
