@@ -18,3 +18,4 @@
 /.idea
 /public/uploads
 /.env
+db-backup
