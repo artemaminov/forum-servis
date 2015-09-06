@@ -28,7 +28,9 @@ ru:
     models:
       admin_user: Пользователи
       carousel:
-        one: Рекламу
-        other: Реклама
+        one: Реклама
+        few: Рекламы
+        many: Реклам
+        other: Рекламы
   formtastic:
     create: Создать %{model}
