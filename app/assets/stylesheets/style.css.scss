@@ -75,7 +75,7 @@ h3 {
     font-size: 0.7em;
   }
   .phone {
-    font-size: 0.9em;
+    font-size: 2em;
     font-weight: bold;
   }
 }
@@ -90,12 +90,12 @@ header {
     position: absolute;
     top: 144px;
     left: 50%;
-    margin: -50px 0 0 -300px;
+    margin: -50px 0 0 -343px;
     .info-block {
       margin-left: 55px;
       position: relative;
-      top: 7px;
-      height: 35px;
+      top: -3px;
+      height: 48px;
       padding-top: 10px;
     }
   }
@@ -322,17 +322,17 @@ header nav {
       right: 0;
       bottom: 0;
       left: 0;
-      height: 170px;
+      height: 152px;
       display: block;
       p {
         font-family: 'Franklin Gothic Demi Cond';
         font-size: 2em;
         &:first-child {
-          margin-bottom: 20px;
+          margin-bottom: 40px;
           font-size: 2.5em;
         }
         &:last-child {
-          margin-top: 20px;
+          margin-top: 7px;
         }
       }
     }
