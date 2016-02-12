@@ -284,7 +284,6 @@
     <div class="card">
       <div class="text">
         <p>(3452) 68-55-44</p>
-        <p>г. Тюмень, ул. Федюнинского, 43</p>
         <p>г. Тюмень, ул. Дачная, 2б</p>
         <p>salon@forum-servis.ru</p>
       </div>
@@ -321,7 +320,7 @@
 <script type="text/javascript">
   DG.autoload(function() {
     var myMap = new DG.Map('gis-map');
-    myMap.setCenter(new DG.GeoPoint(65.606374534373,57.137973599076),13);
+    myMap.setCenter(new DG.GeoPoint(65.666528, 57.1580),13);
     myMap.controls.add(new DG.Controls.Zoom());
     var b1 = new DG.Balloons.Common({
       geoPoint: new DG.GeoPoint(65.666528, 57.164327),
@@ -330,7 +329,7 @@
     var m1 = new DG.Markers.Common({
       geoPoint: new DG.GeoPoint(65.666528, 57.164327),
       icon: new DG.Icon(
-          'assets/pin.png',
+          'assets/map-pin.png',
           new DG.Size(48, 64)
       ),
       clickCallback: function() {
@@ -342,26 +341,26 @@
       }
     });
 
-    var b2 = new DG.Balloons.Common({
-      geoPoint: new DG.GeoPoint(65.546221, 57.111602),
-      contentHtml: 'ул. Федюнинского, 43'
-    });
-    var m2 = new DG.Markers.Common({
-      geoPoint: new DG.GeoPoint(65.546221, 57.111602),
-      icon: new DG.Icon(
-          'assets/pin.png',
-          new DG.Size(48, 64)
-      ),
-      clickCallback: function() {
-        if (! myMap.balloons.getDefaultGroup().contains(b2)) {
-          myMap.balloons.add(b2);
-        } else {
-          b2.show();
-        }
-      }
-    });
+//    var b2 = new DG.Balloons.Common({
+//      geoPoint: new DG.GeoPoint(65.546221, 57.111602),
+//      contentHtml: 'ул. Федюнинского, 43'
+//    });
+//    var m2 = new DG.Markers.Common({
+//      geoPoint: new DG.GeoPoint(65.546221, 57.111602),
+//      icon: new DG.Icon(
+//          'assets/pin.png',
+//          new DG.Size(48, 64)
+//      ),
+//      clickCallback: function() {
+//        if (! myMap.balloons.getDefaultGroup().contains(b2)) {
+//          myMap.balloons.add(b2);
+//        } else {
+//          b2.show();
+//        }
+//      }
+//    });
     myMap.markers.add(m1);
-    myMap.markers.add(m2);
+//    myMap.markers.add(m2);
     myMap.disableScrollZoom();
   });
 </script>
