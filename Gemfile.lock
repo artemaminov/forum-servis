@@ -304,3 +304,9 @@ DEPENDENCIES
   sass-rails
   thin
   uglifier
+
+RUBY VERSION
+   ruby 1.9.3p551
+
+BUNDLED WITH
+   1.14.3
