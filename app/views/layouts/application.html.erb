@@ -56,7 +56,6 @@
   <nav>
     <ul>
       <li><a class="link" onclick="scrollTo('#events')">События</a></li>
-      <li><a class="link" onclick="scrollTo('#brands')">Бренды</a></li>
       <li><a class="link" onclick="scrollTo('#about')">О компании</a></li>
       <li><a class="link" onclick="scrollTo('#contacts')">Контакты</a></li>
     </ul>
@@ -74,10 +73,6 @@
     <object data="assets/events.svg" type="image/svg+xml" id="events"></object>
     <h1>События</h1>
     <div class="content btcf">
-      <div class="brp-news fleft">
-        <h2 class="lborder">Новости BRP</h2>
-          <%= yield %>
-      </div>
       <div class="our-news fright">
         <h2 class="lborder">Наши новости</h2>
         <div class="vk">
@@ -86,157 +81,8 @@
           <!-- VK Widget -->
           <div id="vk_groups"></div>
           <script type="text/javascript">
-            VK.Widgets.Group("vk_groups", {mode: 2, width: "520", height: "600"}, 26281247);
+            VK.Widgets.Group("vk_groups", {mode: 2, width: "1080", height: "600"}, 26281247);
           </script>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="brands clear">
-    <object data="assets/brands.svg" type="image/svg+xml" id="brands"></object>
-    <h1>Бренды</h1>
-    <div class="content btcf">
-      <div class="list">
-        <div class="row">
-          <a href="http://rosan.com/catalog/quadrocicly_can-am/" target="_blank" rel="nofollow">
-            <div class="can-am cell">
-              <div class="header">
-                <div class="vhl-can-am"></div>
-                <div class="logo">
-                  <h3>Квадроциклы</h3>
-                  <div class="logo-vhl-can-am"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>Can-Am® (Кэн-Эм)- вездеходы на все случаи жизни, оснащенные инновационными технологиями для максимальной проходимости в самых трудных условиях. ATV квадроциклы Can-Am созданы для того, чтобы изменить ваш стиль катания и повысить уровень комфорта. Удовольствие от езды в непроходимых условиях – возможно с квадроциклами Can-Am!</p>
-              </div>
-            </div>
-          </a>
-          <div class="spacing"></div>
-          <a href="http://rosan.com/catalog/snegohody_ski-doo/" target="_blank" rel="nofollow">
-            <div class="ski-doo cell">
-              <div class="header">
-                <div class="vhl-ski-doo"></div>
-                <div class="logo">
-                  <h3>Снегоходы</h3>
-                  <div class="logo-vhl-ski-doo"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>Ski-Doo® (Ски-Ду) – бренд номер один в мире снегоходов по качеству, стилю, комфортабельности и высоким технологиям.</p>
-              </div>
-            </div>
-          </a>
-          <div class="spacing"></div>
-          <a href="http://rosan.com/catalog/gidrotsikli-sea-doo/" target="_blank" rel="nofollow">
-            <div class="sea-doo cell">
-              <div class="header">
-                <div class="vhl-sea-doo"></div>
-                <div class="logo">
-                  <h3>Гидроциклы</h3>
-                  <div class="logo-vhl-sea-doo"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>Sea-Doo® (Си-Ду) - любимый бренд для тех, чья стихия – бесконечная водная гладь.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="row spacing"></div>
-        <div class="row">
-          <a href="http://rosan.com/catalog/rodstery_spyder/" target="_blank" rel="nofollow">
-            <div class="spyder cell">
-              <div class="header">
-                <div class="vhl-spyder"></div>
-                <div class="logo">
-                  <h3>Родстеры</h3>
-                  <div class="logo-vhl-can-am"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>Родстеры Spyder – родстеры нового измерения для тех, кто ценит стиль, качество и безопасность. Прост в управлении, идеален для путешествий и катаний по городу, миллионы километров дорог и скоростных магистралей созданы для него.</p>
-              </div>
-            </div>
-          </a>
-          <div class="spacing"></div>
-          <a href="http://rosan.com/catalog/snegohody_lynx/" target="_blank" rel="nofollow">
-            <div class="lynx cell">
-              <div class="header">
-                <div class="vhl-lynx"></div>
-                <div class="logo">
-                  <h3>Снегоходы</h3>
-                  <div class="logo-vhl-lynx"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>Lynx® (Линкс) - синоним слова «снегоход» в Европе с большим количеством разнообразных моделей, разработанных специально с учетом европейских и российских снежных условий.</p>
-              </div>
-            </div>
-          </a>
-          <div class="spacing"></div>
-          <a href="http://evinrude.rosan.com/" target="_blank" rel="nofollow">
-            <div class="evinrude cell">
-              <div class="header">
-                <div class="vhl-evinrude"></div>
-                <div class="logo">
-                  <h3>Лодочные моторы</h3>
-                  <div class="logo-vhl-evinrude"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>Evinrude® - навесные двигатели, разработанные по новым промышленным стандартам. Включают в себя новаторскую технологию E-TEC, позволяющую получить первоклассный опыт во время катания на моторных лодках.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="row spacing"></div>
-        <div class="row">
-          <a href="http://rosan.com/catalog/odezhda_i_aksessuary/" target="_blank" rel="nofollow">
-            <div class="accessories cell">
-              <div class="header">
-                <div class="vhl-accesories"></div>
-                <div class="logo">
-                  <h3>Одежда и аксессуары</h3>
-                  <div class="logo-vhl-accesories"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>В одежде и экипировке торговых марок Can-Am, Ski-Doo, Lynx, Sea-Doo, Spyder учтены самые современные технологии, использованы  лучшие утеплители и мембраны для комфортного использования с учетом погодных условий и особенностей эксплуатации техники.</p>
-              </div>
-            </div>
-          </a>
-          <div class="spacing"></div>
-          <a href="http://rosan.com/catalog/tehnologii/" target="_blank" rel="nofollow">
-            <div class="technology cell">
-              <div class="header">
-                <div class="vhl-technology"></div>
-                <div class="logo">
-                  <h3>Технологии</h3>
-                  <div class="logo-vhl-technology"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>На рынке техники для активного отдыха BRP предлагает самую современную, технически совершенную и надежную продукцию, благодаря чему техника BRP покорила воду, снег и бездорожье!</p>
-              </div>
-            </div>
-          </a>
-          <div class="spacing"></div>
-          <a href="http://rosan.com/club/fajly/" target="_blank" rel="nofollow">
-            <div class="manuals cell">
-              <div class="header">
-                <div class="vhl-manuals"></div>
-                <div class="logo">
-                  <h3>Руководства по эксплуатации</h3>
-                  <div class="logo-vhl-manuals"></div>
-                </div>
-              </div>
-              <div class="body">
-                <p>Несмотря на надежность и безопасность техники BRP, как и любая техника, она нуждается в грамотной эксплуатации , поэтому перед началом использования техники рекомендуем ознакомиться с руководством по эксплуатации.</p>
-              </div>
-            </div>
-          </a>
         </div>
       </div>
     </div>
@@ -309,7 +155,6 @@
   <div class="content">
     <ul class="nav">
       <li><a class="link" onclick="scrollTo('#events')">События</a></li>
-      <li><a class="link" onclick="scrollTo('#brands')">Бренды</a></li>
       <li><a class="link" onclick="scrollTo('#about')">О компании</a></li>
     </ul>
     <div class="social">
