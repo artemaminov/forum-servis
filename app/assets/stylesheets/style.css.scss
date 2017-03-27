@@ -166,7 +166,7 @@ header nav {
 
 .carousel {
   display: block;
-  height: 430px;
+  height: 400px;
   margin: 2px 0 -58px 0;
   z-index: -1;
   overflow: hidden;
@@ -421,11 +421,12 @@ footer {
     .copyright {
       font-size: 0.7em;
       width: 16em;
-      border-top: 1px solid #303030;
+      border-top: 1px solid #ffd204;
       padding-top: 4px;
       position: absolute;
       bottom: -80px;
       left: 40px;
+      color: $white;
     }
     .metrica {
       position: absolute;
