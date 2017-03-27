@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1298" height="103" viewBox="18 0 1262 103" preserveAspectRatio="none">
+  <title>contacts-v2</title>
+  <g>
+    <polygon points="808 9 799 18 507 10 470 25 9 60 9 74 464 85 506 92 784 81 796 93 1289 80 1289 62 808 9" style="fill: #ffd204"/>
+    <polygon points="808 9 799 18 507 10 470 25 9 60 9 74 464 85 506 92 784 81 796 93 1289 80 1289 62 808 9" style="fill: none;stroke: #c5c5c5;stroke-width: 18px"/>
+  </g>
+  <g>
+    <polygon id="svg_2" data-name="svg 2" points="507 10 506 92 784 81 799 18 507 10" style="fill: #ffd204"/>
+    <polygon id="svg_4" data-name="svg 4" points="470 25 464 85 506 92 507 10 470 25" style="fill: #d6b000"/>
+    <polygon id="svg_6" data-name="svg 6" points="799 18 784 81 796 93 808 9 799 18" style="fill: #d6b000"/>
+    <polygon id="right" points="808 9 796 93 1289 80 1289 62 808 9" style="fill: #ffd204"/>
+    <polygon id="left" points="9 60 9 74 464 85 470 25 9 60" style="fill: #ffd204"/>
+  </g>
+</svg>

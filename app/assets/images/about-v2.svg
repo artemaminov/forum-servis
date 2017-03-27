@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1298" height="111" viewBox="18 0 1262 111" preserveAspectRatio="none">
+  <title>about-v2</title>
+  <g>
+    <polygon points="832 9 819 17 449 18 428 28 9 34 9 47 427 101 460 90 808 91 833 102 1289 59 1289 37 832 9" style="fill: none;stroke: #c5c5c5;stroke-width: 18px"/>
+    <g>
+      <polygon id="svg_2" data-name="svg 2" points="832 9 819 17 808 91 833 102 832 9" style="fill: #d6b000"/>
+      <polygon id="right" points="832 9 833 102 1289 59 1289 37 832 9" style="fill: #ffd204"/>
+      <polygon id="left" points="9 34 9 47 427 101 428 28 9 34" style="fill: #ffd204"/>
+      <polygon id="svg_8" data-name="svg 8" points="449 18 428 28 427 101 460 90 449 18" style="fill: #d6b000"/>
+      <polygon id="svg_10" data-name="svg 10" points="449 18 460 90 808 91 819 17 449 18" style="fill: #ffd204"/>
+    </g>
+  </g>
+</svg>

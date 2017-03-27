@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="618" height="99" viewBox="0 0 618 99" preserveAspectRatio="none">
+  <title>navigation-v2</title>
+  <path d="M618,65,588,76,481,62H303l-28,5H186l-32-4L30,79,0,90V-9L42,3,151,14,183,2l92,14,25-3L457,6l16,4L594,3l24,9Z" transform="translate(0 9)" style="fill: #707070"/>
+  <g>
+    <polygon id="svg_2" data-name="svg 2" points="593 21 587 76 618 64 618 31 593 21" style="fill: #d6b000"/>
+    <polygon id="svg_8" data-name="svg 8" points="184 20 152 32 155 65 187 69 184 20" style="fill: #d6b000"/>
+    <polygon id="svg_10" data-name="svg 10" points="0 9 0 89 29 79 40 21 0 9" style="fill: #d6b000"/>
+    <polygon id="svg_12" data-name="svg 12" points="301 31 275 34 274 68 302 63 301 31" style="fill: #d6b000"/>
+    <polygon id="svg_14" data-name="svg 14" points="472 28 456 24 447 63 482 62 472 28" style="fill: #d6b000"/>
+    <polygon id="svg_16" data-name="svg 16" points="152 32 40 21 28 80 155 65 152 32" style="fill: #ffd204"/>
+    <polygon id="svg_18" data-name="svg 18" points="184 20 187 69 274 68 275 34 184 20" style="fill: #ffd204"/>
+    <polygon id="svg_20" data-name="svg 20" points="301 31 302 63 447 63 456 24 301 31" style="fill: #ffd204"/>
+    <polygon id="svg_22" data-name="svg 22" points="472 28 481 62 587 76 593 21 472 28" style="fill: #ffd204"/>
+  </g>
+</svg>

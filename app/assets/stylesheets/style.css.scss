@@ -22,9 +22,19 @@
   font-weight:  400;
 }
 
+$white: white;
+$main-grey: #c5c5c5;
+$grey: #707070;
+$dark-grey: #4e4e4e;
+$black-grey: #404040;
+
+$grey-border: 10px solid $grey;
+$white-thin-border: 1px solid $white;
+
 html, body {
   min-width: 1160px;
-  color: rgb(48, 48, 48);
+  color: $black-grey;
+  background-color: $main-grey;
 }
 
 section {
@@ -34,7 +44,7 @@ section {
 
 a {
   text-decoration: none;
-  color: rgb(48, 48, 48);
+  color: $black-grey;
   cursor: pointer;
 }
 .link:hover {
@@ -57,7 +67,7 @@ h2, h3, .info-block, p {
 }
 
 h1 {
-  padding: 0.4em 0;
+  padding: 0.5em 0;
   font-size: 3em;
   text-align: center;
   position: relative;
@@ -81,27 +91,30 @@ h3 {
 }
 p {
   font-size: 0.9em;
+  line-height: 1.4em;
 }
 
 header {
   height: 305px;
   position: relative;
+  background-color: $dark-grey;
+  color: $white;
   .header {
     position: absolute;
-    top: 144px;
+    top: 169px;
     left: 50%;
     margin: -50px 0 0 -343px;
     .info-block {
       margin-left: 55px;
       position: relative;
-      top: -24px;
-      height: 96px;
+      top: -43px;
+      height: 115px;
       padding-top: 10px;
     }
   }
-  .logo-brp-big {
+  .BRP-logo {
     position: absolute;
-    top: 90px;
+    top: 103px;
     right: 40px;
   }
 }
@@ -129,7 +142,7 @@ header nav {
 .navigation-svg {
   width: 100%;
   display: table;
-  bottom: 0;
+  bottom: -30px;
   position: absolute;
   .row {
     display: table-row;
@@ -148,15 +161,16 @@ header nav {
   }
 }
 #navigation, #navigation-left, #navigation-right {
-  height: 80px;
+  height: 99px;
 }
 
 .carousel {
   display: block;
-  height: 400px;
-  margin: -30px 0 -42px 0;
+  height: 430px;
+  margin: 2px 0 -58px 0;
   z-index: -1;
   overflow: hidden;
+  background-color: $black-grey;
   .item {
     display: inline-block;
     position: relative;
@@ -170,7 +184,7 @@ header nav {
   }
   h1, p {
     position: absolute;
-    color: #ffffff;
+    color: $white;
     text-shadow: 2px 2px black;
   }
   h1 {
@@ -257,41 +271,69 @@ header nav {
   }
 }
 #about {
-  height: 93px;
+  height: 111px;
 }
 .about {
   .header {
-    width: 350px;
     float: left;
+    width: 647px;
+    border-right: $white-thin-border;
+    padding-right: 30px;
     .body {
-      margin-top: 32px;
-    }
-  }
-  .icons {
-    margin-left: 430px;
-    .list {
-      width: 100%;
-      .cell {
-        width: 25%;
-        text-align: center;
-        i {
-          display: inline-block;
+      margin-top: 22px;
+      display: table;
+      border-spacing: 0px 10px;
+      .row {
+        display: table-row;
+        p {
+          width: 100%;
+          display: table-cell;
+          vertical-align: top;
         }
-        div {
-          display: inline-block;
-          margin-top: 5px;
-          p {
-            text-align: left;
-            font-size: 0.75em;
+        img {
+          border: $grey-border;
+          display: table-cell;
+        }
+      }
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .icons {
+      .list {
+        width: 100%;
+        padding-top: 40px;
+        .cell {
+          width: 25%;
+          text-align: center;
+          i {
+            display: inline-block;
+          }
+          div {
+            display: inline-block;
+            margin-top: 5px;
+            p {
+              text-align: left;
+              font-size: 0.75em;
+            }
           }
         }
       }
     }
   }
+  aside {
+    margin-top: 61px;
+    border: $grey-border;
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
 }
 
 #contacts {
-  height: 84px;
+  height: 103px;
 }
 .contacts {
   .map {
@@ -310,83 +352,91 @@ header nav {
     left: 50%;
     margin-left: -240px;
     width: 480px;
-    background-color: white;
+    background-color: $white;
     text-align: center;
     height: 210px;
-    border: 8px solid rgb(255, 210, 4);
+    border: 8px solid $grey;
     z-index: 10000;
     .text {
       margin: auto;
       position: absolute;
-      top: 0;
+      top: 25px;
       right: 0;
       bottom: 0;
       left: 0;
-      height: 152px;
       display: block;
       p {
         font-family: 'Franklin Gothic Demi Cond';
         font-size: 2em;
         &:first-child {
-          margin-bottom: 40px;
+          margin-bottom: 19px;
           font-size: 2.5em;
         }
         &:last-child {
-          margin-top: 7px;
+          margin-top: 0;
         }
       }
     }
   }
 }
-#footer {
-  height: 261px;
-}
-footer .content {
-  position: relative;
-  top: 64px;
-  .social {
-    a {
-      display: block;
-      background: url("sprites.png") no-repeat transparent;
-      width: 22px;
-      height: 22px;
-      float: left;
-    }
-    .vk {
-      background-position: -839px -173px;
-      &:hover {
-        background-position: -839px -102px;
-      }
-    }
-    .fb {
-      background-position: -839px -149px;
-      &:hover {
-        background-position: -839px -78px;
-      }
-    }
-    .odnoklassniki {
-      background-position: -839px -125px;
-      &:hover {
-        background-position: -839px -54px;
-      }
-    }
+
+footer {
+  #footer {
+    height: 279px;
+    position: relative;
   }
-  .copyright {
-    font-size: 0.7em;
-    width: 16em;
-    border-top: 1px solid #303030;
-    padding-top: 4px;
+  .content {
+    top: 120px;
     position: absolute;
-    bottom: -80px;
-    left: 40px;
-  }
-  .metrica {
-    float: right;
-  }
-  .logo-spaceheads {
-    position: absolute;
-    bottom: -89px;
-    right: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .social {
+      a {
+        display: block;
+        background: url("sprites.png") no-repeat transparent;
+        width: 22px;
+        height: 22px;
+        float: left;
+      }
+      .vk {
+        background-position: -839px -173px;
+        &:hover {
+          background-position: -839px -102px;
+        }
+      }
+      .fb {
+        background-position: -839px -149px;
+        &:hover {
+          background-position: -839px -78px;
+        }
+      }
+      .odnoklassniki {
+        background-position: -839px -125px;
+        &:hover {
+          background-position: -839px -54px;
+        }
+      }
+    }
+    .copyright {
+      font-size: 0.7em;
+      width: 16em;
+      border-top: 1px solid #303030;
+      padding-top: 4px;
+      position: absolute;
+      bottom: -80px;
+      left: 40px;
+    }
+    .metrica {
+      position: absolute;
+      bottom: -40px;
+      left: 40px;
+    }
+    .logo-spaceheads {
+      position: absolute;
+      bottom: -89px;
+      right: 40px;
+    }
   }
 }
 
@@ -420,7 +470,19 @@ footer .content {
 }
 .lborder {
   padding-left: 15px;
-  border-left: 1px solid rgb(48, 48, 48);
+  border-left: $white-thin-border;
+}
+.pleft {
+  padding-left: 25px;
+}
+.pright {
+  padding-right: 25px;
+}
+.pbottom {
+  padding-bottom: 10px;
+}
+.ptop {
+  padding-top: 10px;
 }
 
 .list {
@@ -453,4 +515,5 @@ header, main, footer {
   margin: 30px auto 0;
   z-index: 1;
   padding: 0 40px;
+  position: relative;
 }
