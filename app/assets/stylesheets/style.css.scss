@@ -81,6 +81,7 @@ h3 {
   font-size: 0.9em;
 }
 .info-block {
+  color: $white;
   .status {
     font-size: 0.7em;
   }
@@ -276,7 +277,7 @@ header nav {
 .about {
   .header {
     float: left;
-    width: 647px;
+    width: 640px;
     border-right: $white-thin-border;
     padding-right: 30px;
     .body {
