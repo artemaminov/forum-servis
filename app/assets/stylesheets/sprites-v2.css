@@ -1,7 +1,7 @@
 /* ----------------------------------------------------
    created with http://www.codeandweb.com/texturepacker 
    ----------------------------------------------------
-   $TexturePacker:SmartUpdate:e0766d23e2d9b4e87eadc558143605e5:4e6997995810e4b68f5b44d8214fab4d:acbb9a391e717371817054b7bacf3992$
+   $TexturePacker:SmartUpdate:635cd0785ec4ce7a740f556234653702:da639c68f8a2bcaa6b8fb31b2732b14d:acbb9a391e717371817054b7bacf3992$
    ----------------------------------------------------
 
    usage: <span class="{-spritename-} sprite"></span>
@@ -10,14 +10,14 @@
 
 */
 
-.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(sprites-v2.png);}
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat}
 
-.BRP-logo {width:66px; height:66px; background-position: -1px -77px}
-.logo {width:366px; height:38px; background-position: -1px -37px}
-.logo-small {width:253px; height:27px; background-position: -1px -1px}
-.logo-spaceheads {width:178px; height:34px; background-position: -256px -1px}
-.srvs-conservation {width:107px; height:80px; background-position: -173px -77px}
-.srvs-mobile-repair {width:78px; height:85px; background-position: -282px -77px}
-.srvs-repair {width:61px; height:63px; background-position: -436px -1px}
-.srvs-sell {width:102px; height:77px; background-position: -69px -77px}
-.srvs-warranty {width:101px; height:63px; background-position: -369px -66px}
+.BRP-logo {width:66px; height:66px; background-position: -290px -117px;background-image:url(sprites-v2.png)}
+.logo {width:366px; height:38px; background-position: -1px -1px;background-image:url(sprites-v2.png)}
+.logo-small {width:253px; height:27px; background-position: -1px -41px;background-image:url(sprites-v2.png)}
+.logo-spaceheads {width:178px; height:34px; background-position: -143px -204px;background-image:url(sprites-v2.png)}
+.srvs-conservation {width:145px; height:140px;background:url(srvs-conservation.gif) center center no-repeat}
+.srvs-mobile-repair {width:140px; height:140px;background:url(srvs-mobile-repair.gif) center center no-repeat}
+.srvs-repair {width:71px; height:140px;background:url(srvs-repair.gif) center center no-repeat}
+.srvs-sell {width:115px; height:140px;background:url(srvs-sell.gif) center center no-repeat}
+.srvs-warranty {width:140px; height:140px;background:url(srvs-warranty.gif) center center no-repeat}
