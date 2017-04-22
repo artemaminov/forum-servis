@@ -16,8 +16,8 @@
 .logo {width:366px; height:38px; background-position: -1px -1px;background-image:url(sprites-v2.png)}
 .logo-small {width:253px; height:27px; background-position: -1px -41px;background-image:url(sprites-v2.png)}
 .logo-spaceheads {width:178px; height:34px; background-position: -143px -204px;background-image:url(sprites-v2.png)}
-.srvs-conservation {width:145px; height:140px;background:url(srvs-conservation.gif) center center no-repeat}
+.srvs-conservation {width:145px; height:196px;background:url(srvs-conservation.gif) center center no-repeat}
 .srvs-mobile-repair {width:140px; height:140px;background:url(srvs-mobile-repair.gif) center center no-repeat}
-.srvs-repair {width:71px; height:140px;background:url(srvs-repair.gif) center center no-repeat}
+.srvs-repair {width:140px; height:140px;background:url(srvs-repair.gif) center center no-repeat}
 .srvs-sell {width:115px; height:140px;background:url(srvs-sell.gif) center center no-repeat}
-.srvs-warranty {width:140px; height:140px;background:url(srvs-warranty.gif) center center no-repeat}
+.srvs-warranty {width:71px; height:140px;background:url(srvs-warranty.gif) center center no-repeat}
