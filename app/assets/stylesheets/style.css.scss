@@ -91,8 +91,8 @@ h3 {
   }
 }
 p {
-  font-size: 0.9em;
-  line-height: 1.4em;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 header {
@@ -276,7 +276,7 @@ header nav {
 }
 .about {
   .header {
-    float: left;
+    //float: left;
     width: 640px;
     border-right: $white-thin-border;
     padding-right: 30px;
@@ -302,34 +302,34 @@ header nav {
         clear: both;
       }
     }
-    .icons {
-      .list {
-        width: 100%;
-        padding-top: 40px;
-        .cell {
-          width: 20%;
-          text-align: center;
-          i {
-            display: inline-block;
-          }
-          div {
-            display: inline-block;
-            margin-top: 5px;
-            p {
-              text-align: left;
-              font-size: 0.75em;
-            }
-          }
-        }
-      }
-    }
   }
   aside {
     margin-top: 61px;
     border: $grey-border;
-    position: absolute;
-    top: 0;
-    right: 40px;
+    //position: absolute;
+    //top: 0;
+    //right: 40px;
+  }
+  .icons {
+    .list {
+      width: 100%;
+      //padding-top: 40px;
+      .cell {
+        width: 20%;
+        text-align: center;
+        i {
+          display: inline-block;
+        }
+        div {
+          display: inline-block;
+          margin-top: 5px;
+          p {
+            text-align: center;
+            font-size: 1em;
+          }
+        }
+      }
+    }
   }
 }
 
