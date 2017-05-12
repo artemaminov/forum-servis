@@ -282,18 +282,40 @@ header nav {
     padding-right: 30px;
     .body {
       margin-top: 22px;
-      display: table;
       border-spacing: 0px 10px;
+      &.table {
+        display: table;
+      }
       .row {
         display: table-row;
-        p {
-          width: 100%;
+        .cell {
           display: table-cell;
           vertical-align: top;
+          h2 {
+            padding-bottom: 1em;
+            i {
+              color: #de1616;
+            }
+          }
+          p {
+            vertical-align: top;
+            padding-bottom: 1em;
+          }
         }
         img {
           border: $grey-border;
           display: table-cell;
+          margin-bottom: 1em;
+        }
+        &:nth-child(odd) {
+          p, h2 {
+            padding-right: 30px;
+          }
+        }
+        &:nth-child(even) {
+          p, h2 {
+            padding-left: 30px;
+          }
         }
       }
       &:after {
@@ -304,7 +326,7 @@ header nav {
     }
   }
   aside {
-    margin-top: 61px;
+    margin-top: 62px;
     border: $grey-border;
     //position: absolute;
     //top: 0;
