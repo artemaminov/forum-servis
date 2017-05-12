@@ -17,6 +17,22 @@ $(document).ready(function () {
             notTop: "fadeInUp"
         }
     });
+
+    $("[data-fancybox]").fancybox({
+        loop : false,
+        infobar : false,
+        buttons : true,
+        slideShow  : false,
+        fullScreen : false,
+        thumbs     : false,
+        closeBtn   : true,
+        iframe : {
+            scrolling : 'yes',
+            css : {
+                width : '1280px'
+            }
+        }
+    });
 });
 
 function scrollTo(selector) {

@@ -14,4 +14,5 @@
 //= require jquery.headroom.min
 //= require jquery.carouFredSel-6.2.1-packed
 //= require headroom.min
+//= require jquery.fancybox.min
 //= require script

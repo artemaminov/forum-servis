@@ -12,5 +12,6 @@
  *= require normalize
  *= require animate.min
  *= require sprites-v2
+ *= require jquery.fancybox.min
  *= require style
  */
