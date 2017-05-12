@@ -1,7 +1,7 @@
 /* ----------------------------------------------------
    created with http://www.codeandweb.com/texturepacker 
    ----------------------------------------------------
-   $TexturePacker:SmartUpdate:635cd0785ec4ce7a740f556234653702:da639c68f8a2bcaa6b8fb31b2732b14d:acbb9a391e717371817054b7bacf3992$
+   $TexturePacker:SmartUpdate:693a7d5bfdddab0aaab48ca802495101:ed82839d18cd116cefb1d0673990ac05:acbb9a391e717371817054b7bacf3992$
    ----------------------------------------------------
 
    usage: <span class="{-spritename-} sprite"></span>
@@ -10,12 +10,16 @@
 
 */
 
-.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat}
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;}
 
-.BRP-logo {width:66px; height:66px; background-position: -290px -117px;background-image:url(sprites-v2.png)}
-.logo {width:366px; height:38px; background-position: -1px -1px;background-image:url(sprites-v2.png)}
-.logo-small {width:253px; height:27px; background-position: -1px -41px;background-image:url(sprites-v2.png)}
-.logo-spaceheads {width:178px; height:34px; background-position: -143px -204px;background-image:url(sprites-v2.png)}
+.BRP-logo {width:66px; height:66px; background-position: -369px -74px;background-image:url(sprites-v2.png);}
+.atv {width:244px; height:96px; background-position: -1px -1px;background-image:url(sprites-v2.png);}
+.logo {width:366px; height:38px; background-position: -1px -99px;background-image:url(sprites-v2.png);}
+.logo-small {width:253px; height:27px; background-position: -1px -139px;background-image:url(sprites-v2.png);}
+.logo-spaceheads {width:178px; height:34px; background-position: -246px -203px;background-image:url(sprites-v2.png);}
+.roadster {width:243px; height:71px; background-position: -1px -168px;background-image:url(sprites-v2.png);}
+.scooter {width:143px; height:59px; background-position: -256px -142px;background-image:url(sprites-v2.png);}
+.snowmobile {width:175px; height:71px; background-position: -247px -1px;background-image:url(sprites-v2.png);}
 .srvs-conservation {width:145px; height:196px;background:url(srvs-conservation.gif) center center no-repeat}
 .srvs-mobile-repair {width:140px; height:140px;background:url(srvs-mobile-repair.gif) center center no-repeat}
 .srvs-repair {width:140px; height:140px;background:url(srvs-repair.gif) center center no-repeat}

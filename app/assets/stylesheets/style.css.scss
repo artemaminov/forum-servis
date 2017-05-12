@@ -244,28 +244,19 @@ header nav {
 }
 
 .brands {
-  object {
-    height: 85px;
-  }
-  .cell {
-    border-bottom: 1px solid transparent;
-    padding-bottom: 10px;
-    width: 350px;
-    &:hover {
-      border-bottom: 1px solid rgb(255, 210, 4);
-    }
-    .header {
-      position: relative;
-      .logo {
-        position: absolute;
-        bottom: 28px;
-        right: 0;
-        h3 {
-          max-width: 12em;
-          text-align: right;
-        }
-        div {
-          clear: both;
+  .table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-transform: uppercase;
+    padding: 2em 0;
+    ul {
+      display: table-row;
+      li {
+        display: table-cell;
+        text-align: center;
+        a {
+          font: 2em 'Franklin Gothic Demi Cond';
         }
       }
     }
