@@ -1,7 +1,7 @@
 # encoding: utf-8
 ActiveAdmin.register AdminUser do
 
-  menu :priority => 3, :label => "Пользователи"
+  menu :priority => 4, :label => "Пользователи"
 
   index do
     column :email

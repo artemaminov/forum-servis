@@ -114,6 +114,15 @@
               <h2><a data-fancybox="offers" href="javascript:;" data-src="http://formula7.ru/specials/">ТЕКУЩИЕ АКЦИИ</a></h2>
             </div>
           </div>
+
+          <% unless @pricelist.blank? %>
+            <div class="row">
+              <div class="cell">
+                <h2><a data-fancybox="offers" href="<%= @pricelist.filename.url %>" data-src="http://formula7.ru/specials/">ТЕХНИКА В НАЛИЧИИ (СКАЧАТЬ)</a></h2>
+              </div>
+            </div>
+          <% end %>
+
         </div>
       </div>
       <aside class="fright">
