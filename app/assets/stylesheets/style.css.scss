@@ -104,13 +104,24 @@ header {
     position: absolute;
     top: 169px;
     left: 50%;
-    margin: -50px 0 0 -343px;
+    margin: -50px 0 0 -489px;
     .info-block {
       margin-left: 55px;
       position: relative;
       top: -43px;
       height: 115px;
       padding-top: 10px;
+    }
+  }
+  .f7_full_logo {
+    float: left;
+    position: relative;
+    left: -50px;
+    top: -11px;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
   .BRP-logo {
