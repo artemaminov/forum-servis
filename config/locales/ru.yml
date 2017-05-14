@@ -32,5 +32,8 @@ ru:
         few: Рекламы
         many: Реклам
         other: Рекламы
+  errors:
+    messages:
+      extension_white_list_error: Неверный тип файла
   formtastic:
     create: Создать %{model}
