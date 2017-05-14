@@ -1,7 +1,7 @@
 /* ----------------------------------------------------
    created with http://www.codeandweb.com/texturepacker 
    ----------------------------------------------------
-   $TexturePacker:SmartUpdate:2461bc77de044a02dd48cf27a32606ab:0cdb5fdf87a361f3f63e8d2dc6fca255:acbb9a391e717371817054b7bacf3992$
+   $TexturePacker:SmartUpdate:805865a54c0dc335ece2cdadf067b336:ed7bbac8dfe95c18a22512510346f26f:acbb9a391e717371817054b7bacf3992$
    ----------------------------------------------------
 
    usage: <span class="{-spritename-} sprite"></span>
@@ -10,16 +10,16 @@
 
 */
 
-.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;}
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat}
 
-.BRP-logo {width:66px; height:66px; background-position: -536px -1px;background-image:url(sprites-v2.png);}
-.atv {width:160px; height:119px; background-position: -374px -1px;background-image:url(sprites-v2.png);}
-.f7_full_logo {width:233px; height:67px; background-position: -341px -146px;background-image:url(sprites-v2.png);}
-.logo {width:366px; height:38px; background-position: -1px -1px;background-image:url(sprites-v2.png);}
-.logo-small {width:253px; height:27px; background-position: -341px -215px;background-image:url(sprites-v2.png);}
-.logo-spaceheads {width:178px; height:34px; background-position: -1px -176px;background-image:url(sprites-v2.png);}
-.roadster {width:183px; height:103px; background-position: -189px -41px;background-image:url(sprites-v2.png);}
-.scooter {width:150px; height:96px; background-position: -189px -146px;background-image:url(sprites-v2.png);}
+.BRP-logo {width:66px; height:66px; background-position: -536px -70px;background-image:url(sprites-v2.png)}
+.atv {width:160px; height:119px; background-position: -374px -70px;background-image:url(sprites-v2.png)}
+.f7_full_logo {width:233px; height:67px; background-position: -374px -1px;background-image:url(sprites-v2.png)}
+.logo {width:366px; height:38px; background-position: -1px -1px;background-image:url(sprites-v2.png)}
+.logo-small {width:253px; height:27px; background-position: -335px -191px;background-image:url(sprites-v2.png)}
+.logo-spaceheads {width:178px; height:34px; background-position: -1px -176px;background-image:url(sprites-v2.png)}
+.roadster {width:183px; height:103px; background-position: -189px -41px;background-image:url(sprites-v2.png);margin-bottom: 20px;}
+.scooter {width:144px; height:91px; background-position: -189px -146px;background-image:url(sprites-v2.png);margin-bottom: 18px;}
 .snowmobile {width:186px; height:133px; background-position: -1px -41px;background-image:url(sprites-v2.png);}
 .srvs-conservation {width:145px; height:196px;background:url(srvs-conservation.gif) center center no-repeat}
 .srvs-mobile-repair {width:140px; height:140px;background:url(srvs-mobile-repair.gif) center center no-repeat}
