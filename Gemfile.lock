@@ -69,6 +69,10 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubis (2.7.0)
     eventmachine (1.2.2)
     excon (0.55.0)
@@ -324,6 +328,7 @@ DEPENDENCIES
   activeadmin
   carrierwave
   coffee-rails
+  dotenv-rails
   feedjira
   fog
   jquery-rails
@@ -339,4 +344,4 @@ RUBY VERSION
    ruby 2.1.10p492
 
 BUNDLED WITH
-   1.14.3
+   1.14.6
