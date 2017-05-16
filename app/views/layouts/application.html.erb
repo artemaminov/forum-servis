@@ -90,36 +90,31 @@
           </div>
           <div class="row">
             <div class="cell">
-              <p>Дмитрий выбрал надежный квадроцикл Can-Am Outlander 650 MAX XT для охоты и рыбалки. Алексей предпочитает покорять дикие склоны Алтая на снегоходе Ski-Doo Summit X 850. Татьяна любит водный экстрим на гидроцикле Sea-Doo Spark Trixx, а Стас выглядит эпически на новом Spyder F3.
-                <br>Всех нас объединяет страсть к активному отдыху.</p>
+              <p>Дмитрий выбрал надежный квадроцикл Can-Am Outlander 650 MAX XT для охоты и рыбалки. Алексей предпочитает покорять дикие склоны Алтая на снегоходе Ski-Doo Summit X 850. Татьяна любит водный экстрим на гидроцикле Sea-Doo Spark Trixx, а Стас выглядит эпически на новом Spyder F3. Всех нас объединяет страсть к активному отдыху.</p>
+                <p>Мы по достоинству оценили технику BRP.
+                <br>Теперь предлагаем оценить её вам.</p>
             </div>
             <div class="cell">
               <%= image_tag 'team-outside.jpg' %>
             </div>
           </div>
           <div class="row">
-            <div class="cell">
+            <div class="cell img">
               <%= image_tag 'snow-hud.jpg' %>
+              <a data-fancybox="offers" href="javascript:;" data-src="http://formula7.ru/specials/"><span>АКЦИИ И СПЕЦПРЕДЛОЖЕНИЯ</span></a>
             </div>
             <div class="cell">
-              <p>Мы по достоинству оценили технику BRP.
-                <br>Теперь предлагаем оценить её вам.</p>
-              <h1>W<i>E</i>LCOME, TO BRP CLUB!</h1>
+              <h1>W<i>E</i>LCOME TO BRP CLUB!</h1>
               <p>Команда BRP Центр Тюмень.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="cell">
-              <h2><a data-fancybox="offers" href="javascript:;" data-src="http://formula7.ru/specials/">ТЕКУЩИЕ АКЦИИ</a></h2>
             </div>
           </div>
 
           <% unless @pricelist.blank? %>
-            <div class="row">
-              <div class="cell">
-                <h2><a data-fancybox="offers" href="<%= @pricelist.filename.url %>" data-src="http://formula7.ru/specials/">ТЕХНИКА В НАЛИЧИИ (СКАЧАТЬ)</a></h2>
-              </div>
+          <div class="row">
+            <div class="cell">
+              <h2><a data-fancybox="offers" href="<%= @pricelist.filename.url %>" data-src="http://formula7.ru/specials/">ТЕХНИКА В НАЛИЧИИ (СКАЧАТЬ)</a></h2>
             </div>
+          </div>
           <% end %>
 
         </div>
