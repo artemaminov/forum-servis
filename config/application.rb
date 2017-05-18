@@ -55,7 +55,7 @@ module ForumServis
 
     # Enable the asset pipeline
     config.assets.enabled = true
-
+    config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
     config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
