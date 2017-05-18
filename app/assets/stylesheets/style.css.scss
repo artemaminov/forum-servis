@@ -124,6 +124,14 @@ header {
   }
 }
 
+.on-top-of-fancybox {
+  z-index: 9999999999999 !important;
+  position: fixed !important;;
+}
+.on-top-of-hack {
+  padding-top: 305px;
+}
+
 header nav {
   position: absolute;
   bottom: 32px;

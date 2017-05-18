@@ -29,8 +29,18 @@ $(document).ready(function () {
         iframe : {
             scrolling : 'yes',
             css : {
-                width : '1280px'
+                'min-width' : '1280px',
+                'padding-top': '230px',
+                'background-color': 'transparent'
             }
+        },
+        onComplete: function() {
+            $('header, .header').toggleClass('on-top-of-fancybox');
+            $('.carousel').toggleClass('on-top-of-hack');
+        },
+        beforeClose: function() {
+            $('header, .header').toggleClass('on-top-of-fancybox');
+            $('.carousel').toggleClass('on-top-of-hack');
         }
     });
 });
