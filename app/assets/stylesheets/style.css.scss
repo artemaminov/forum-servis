@@ -55,17 +55,13 @@ h1, nav, .nav {
   font-family: 'Franklin Gothic Demi Cond';
   text-transform: uppercase;
 }
-nav, .nav {
-  font-size: 1.3em;
-  li {
-    margin-bottom: 6px;
+h1, h2, h3 {
+  font-family: 'Franklin Gothic Demi Cond';
+  margin-bottom: 1em;
+  span {
+    font-family: 'Franklin Gothic Book';
   }
 }
-
-h2, h3, .info-block, p {
-  font-family: 'Franklin Gothic Book';
-}
-
 h1 {
   padding: 0.5em 0;
   font-size: 3em;
@@ -74,11 +70,19 @@ h1 {
   z-index: 2;
 }
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 2em;
 }
 h3 {
-  font-size: 0.9em;
+  font-size: 1.5em;
+}
+nav, .nav {
+  font-size: 1.3em;
+  li {
+    margin-bottom: 6px;
+  }
+}
+.info-block, p {
+  font-family: 'Franklin Gothic Book';
 }
 .info-block {
   color: $white;
@@ -102,20 +106,20 @@ header {
   color: $white;
   .header {
     position: absolute;
-    top: 169px;
+    top: 140px;
     left: 50%;
     margin: -50px 0 0 -343px;
     .info-block {
       margin-left: 55px;
       position: relative;
-      top: -43px;
+      top: -19px;
       height: 115px;
       padding-top: 10px;
     }
   }
   .BRP-logo {
     position: absolute;
-    top: 103px;
+    top: 71px;
     right: 40px;
   }
 }
@@ -267,7 +271,6 @@ header nav {
 }
 .about {
   .header {
-    //float: left;
     width: 640px;
     border-right: $white-thin-border;
     padding-right: 30px;
@@ -302,6 +305,7 @@ header nav {
               height: 100%;
               bottom: 0;
               text-align: center;
+              left: 0;
               span {
                 position: relative;
                 top: 35%;
@@ -337,11 +341,9 @@ header nav {
     }
   }
   aside {
-    margin-top: 62px;
-    border: $grey-border;
-    //position: absolute;
-    //top: 0;
-    //right: 40px;
+    .vk {
+      border: $grey-border;
+    }
   }
   .icons {
     .list {
@@ -459,13 +461,13 @@ footer {
       border-top: 1px solid #ffd204;
       padding-top: 4px;
       position: absolute;
-      bottom: -80px;
+      bottom: -116px;
       left: 40px;
-      color: $white;
+      color: white;
     }
     .metrica {
       position: absolute;
-      bottom: -40px;
+      bottom: -71px;
       left: 40px;
     }
     .logo-spaceheads {
@@ -476,7 +478,7 @@ footer {
     .f7_full_logo {
       position: absolute;
       left: 50%;
-      top: 7px;
+      top: 38px;
       margin-left: -116px;
       a {
         display: block;
