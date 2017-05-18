@@ -68,6 +68,9 @@ h1 {
   text-align: center;
   position: relative;
   z-index: 2;
+  &.section-title {
+    margin-bottom: 0;
+  }
 }
 h2 {
   font-size: 2em;
