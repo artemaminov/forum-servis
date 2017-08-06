@@ -127,9 +127,11 @@ header {
   }
 }
 
+.header.on-top-of-fancybox {
+  position: fixed;
+}
 .on-top-of-fancybox {
-  z-index: 9999999999999 !important;
-  position: fixed !important;;
+  z-index: 99999999 !important;
 }
 .on-top-of-hack {
   padding-top: 305px;
@@ -164,6 +166,7 @@ header nav {
     display: table-row;
     .cell {
       display: table-cell;
+      width: min-content;
       object {
         width: 100%;
       }
@@ -431,14 +434,15 @@ footer {
   #footer {
     height: 288px;
     position: relative;
-    bottom: -11px;
+    bottom: -10px;
   }
   .content {
-    top: 120px;
+    top: 0;
     position: absolute;
     width: 100%;
     margin: 0;
     padding: 0;
+    bottom: 0;
     .social {
       a {
         display: block;
@@ -472,24 +476,24 @@ footer {
       border-top: 1px solid #ffd204;
       padding-top: 4px;
       position: absolute;
-      bottom: -116px;
+      bottom: 10px;
       left: 40px;
       color: white;
     }
     .metrica {
       position: absolute;
-      bottom: -71px;
+      bottom: 55px;
       left: 40px;
     }
     .logo-spaceheads {
       position: absolute;
-      bottom: -89px;
+      bottom: 10px;
       right: 40px;
     }
     .f7_full_logo {
       position: absolute;
       left: 50%;
-      top: 38px;
+      bottom: 100px;
       margin-left: -116px;
       a {
         display: block;
