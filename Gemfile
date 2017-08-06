@@ -46,3 +46,11 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.3'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rbenv-vars'
+end
