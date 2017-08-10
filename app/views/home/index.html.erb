@@ -7,3 +7,13 @@
   </div>
   <% end %>
 <% end %>
+
+<% content_for :offer_carousel do %>
+    <% @offers_banners.each do |banner| %>
+        <div class="item">
+          <h1 class="title"><%= banner.header.html_safe %></h1>
+          <p class="body"><%= banner.body %></p>
+          <div class="img" style="background-image: url(<%= banner.banner.url %>)"></div>
+        </div>
+    <% end %>
+<% end %>

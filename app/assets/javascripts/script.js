@@ -6,6 +6,13 @@ $(document).ready(function () {
         responsive: true
     });
 
+    $('#offers-carousel').carouFredSel({
+        auto: {
+            timeoutDuration: 8000
+        },
+        responsive: true
+    });
+
     $('.up').headroom({
         offset: 300,
         tolerance: 100,
@@ -19,24 +26,27 @@ $(document).ready(function () {
     });
 
     $("[data-fancybox]").fancybox({
-        loop : false,
-        infobar : false,
-        buttons : true,
-        slideShow  : false,
-        fullScreen : false,
-        thumbs     : false,
-        closeBtn   : true,
-        iframe : {
-            scrolling : 'yes',
-            css : {
-                'min-width' : '1280px',
-                'padding-top': '230px',
+        loop: false,
+        infobar: false,
+        buttons: true,
+        slideShow: false,
+        fullScreen: false,
+        thumbs: false,
+        closeBtn: true,
+        iframe: {
+            scrolling: 'yes',
+            // preload: false,
+            css: {
+                'width': '100%',
+                'height': '100%',
+                'margin': '0',
+                'padding-top': '300px',
                 'background-color': 'transparent'
             }
         },
         onComplete: function() {
-            $('header, .header').toggleClass('on-top-of-fancybox');
             $('.carousel').toggleClass('on-top-of-hack');
+            $('header, .header').toggleClass('on-top-of-fancybox');
         },
         beforeClose: function() {
             $('header, .header').toggleClass('on-top-of-fancybox');
@@ -46,10 +56,11 @@ $(document).ready(function () {
 });
 
 function scrollTo(selector) {
-    if (selector == '#top') {
-        margin = 0
+    var margin;
+    if (selector === '#top') {
+        margin = 0;
     } else {
-        margin = 20
+        margin = 20;
     }
     $('html, body').animate({ scrollTop: $(selector).offset().top + margin }, 'slow');
 }

@@ -153,6 +153,10 @@ header nav {
   z-index: -1;
   overflow: hidden;
   background-color: #404040; }
+  .carousel.offers {
+    position: relative;
+    top: -40px;
+    margin-bottom: -87px; }
   .carousel .item {
     display: inline-block;
     position: relative; }
@@ -179,12 +183,12 @@ header nav {
     top: 310px;
     left: 30px; }
 
-#events, #brands, #about, #contacts, #footer {
+#offers, #brands, #about, #contacts, #footer {
   position: absolute;
   z-index: 1;
   width: 100%; }
 
-#events {
+#offers {
   height: 84px; }
 
 .brp-news, .our-news {

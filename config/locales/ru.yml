@@ -21,6 +21,7 @@ ru:
         sign_in_count: Количество авторизаций
       carousel:
         header: Заголовок
+        dealer: Акция диллера
         body: Текст
         banner: Изображение
         created_at: Создан
