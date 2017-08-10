@@ -26,7 +26,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'feedjira'
+# gem 'feedjira'
 # gem 'jquery-ui-rails'
 
 gem 'russian'
