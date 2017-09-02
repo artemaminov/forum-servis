@@ -197,7 +197,32 @@ header nav {
     top: -40px;
     margin-bottom: -87px;
     .item {
-      width: 700px;
+      .img {
+        width: 700px;
+        height: 400px;
+        float: left;
+        display: block;
+      }
+      .text {
+        height: 400px;
+        background-color: white;
+        margin-left: 700px;
+        padding-right: 30px;
+        display: block;
+        h1 {
+          position: relative;
+          font-size: 1.8em;
+          left: 30px;
+          text-align: left;
+          width: auto;
+        }
+        p {
+          position: relative;
+          font-size: 1em;
+          left: 30px;
+          top: 0px;
+        }
+      }
     }
   }
   .item {

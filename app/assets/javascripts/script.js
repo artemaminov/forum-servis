@@ -11,7 +11,7 @@ $(document).ready(function () {
         auto: {
             timeoutDuration: 8000
         },
-        responsive: false,
+        responsive: true,
         width: "100%",
         align: "center",
         scroll: {
@@ -19,8 +19,7 @@ $(document).ready(function () {
         },
         swipe: true,
         items: {
-            visible: 3,
-            width: 700,
+            visible: 1,
             height: 400
         }
     });
