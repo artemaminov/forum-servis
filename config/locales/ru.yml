@@ -3,6 +3,8 @@ ru:
   "false": Нет
   activerecord:
     attributes:
+      attachment:
+        filename: Файл
       admin_user:
         current_sign_in_at: Текущая авторизация
         current_sign_in_ip: Текущий IP авторизации
@@ -26,8 +28,11 @@ ru:
         banner: Изображение
         created_at: Создан
         updated_at: Изменен
+      pricelist:
+        filename: Файл
     models:
       admin_user: Пользователи
+      pricelist: Прайс-лист
       carousel:
         one: Реклама
         few: Реклама

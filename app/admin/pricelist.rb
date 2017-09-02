@@ -1,3 +1,4 @@
+# encoding: utf-8
 ActiveAdmin.register Pricelist do
 
   menu :priority => 3, :label => "Техника в наличии"
@@ -8,7 +9,7 @@ ActiveAdmin.register Pricelist do
   end
 
   form do |f|
-    f.inputs "Техника в наличии" do
+    f.inputs "Техника в наличии (прайс-лист)" do
       f.input :filename
     end
     f.actions
