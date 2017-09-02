@@ -1,7 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register Carousel do
-
-  menu :priority => 2, :label => "Реклама"
+  menu :priority => 3, :label => "Реклама"
 
   index do
     column :dealer do |is_it|

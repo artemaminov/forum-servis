@@ -1,7 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register Pricelist do
-
-  menu :priority => 3, :label => "Техника в наличии"
+  menu :priority => 4, :label => "Техника в наличии (прайс-лист)"
 
   index do
     column :filename

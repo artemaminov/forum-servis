@@ -1,7 +1,6 @@
 # encoding: utf-8
 ActiveAdmin.register_page "Dashboard" do
-
-  menu :priority => 1, :label => "Консоль управления"
+  menu :priority => 0, :label => "Консоль управления"
 
   content :title => "Консоль управления" do
     div :class => "blank_slate_container", :id => "dashboard_default_message" do
