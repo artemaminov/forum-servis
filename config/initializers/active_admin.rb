@@ -5,7 +5,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "Forum Servis"
+  config.site_title = "Форум-Сервис"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.
@@ -100,7 +100,7 @@ ActiveAdmin.setup do |config|
   # Admin comments are enabled by default.
   #
   # Default:
-  # config.allow_comments = true
+  config.allow_comments = false
   #
   # You can turn them on and off for any given namespace by using a
   # namespace config block.
@@ -207,4 +207,18 @@ ActiveAdmin.setup do |config|
   # config.filters = true
 
 
+end
+
+# Redirect (globall)y to index page after create or edit action
+# https://github.com/activeadmin/activeadmin/issues/3468
+require 'active_admin/resource_controller'
+
+class ActiveAdmin::ResourceController
+  include InheritedResources::DSL
+  create! do |success, failure|
+    success.html { redirect_to collection_url}
+  end
+  update! do |success, failure|
+    success.html { redirect_to collection_url}
+  end
 end

@@ -11,6 +11,7 @@ ru:
         last_sign_in_ip: IP предыдущей авторизации
         created_at: Создан
         updated_at: Изменен
+        update:  Обновить
         email: E-mail
         encrypted_password: Зашифрованый пароль
         last_sign_in_at: Последняя авторизация
@@ -43,3 +44,4 @@ ru:
       extension_white_list_error: Неверный тип файла
   formtastic:
     create: Создать %{model}
+    update: Сохранить изменения
