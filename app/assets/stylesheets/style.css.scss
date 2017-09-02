@@ -186,14 +186,19 @@ header nav {
 .carousel {
   display: block;
   height: 400px;
+  width: 100%;
   margin: 2px 0 -58px 0;
   z-index: -1;
   overflow: hidden;
   background-color: $black-grey;
   &.offers {
+    //height: 500px;
     position: relative;
     top: -40px;
     margin-bottom: -87px;
+    .item {
+      width: 700px;
+    }
   }
   .item {
     display: inline-block;

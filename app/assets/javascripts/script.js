@@ -10,7 +10,18 @@ $(document).ready(function () {
         auto: {
             timeoutDuration: 8000
         },
-        responsive: true
+        responsive: false,
+        width: "100%",
+        align: "center",
+        scroll: {
+            items: 1
+        },
+        swipe: true,
+        items: {
+            visible: 3,
+            width: 700,
+            height: 400
+        }
     });
 
     $('.up').headroom({

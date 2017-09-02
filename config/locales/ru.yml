@@ -29,10 +29,10 @@ ru:
     models:
       admin_user: Пользователи
       carousel:
-        one: Рекламу
+        one: Реклама
         few: Реклама
         many: Рекламы
-        other: Реклама
+        other: Рекламу
   errors:
     messages:
       extension_white_list_error: Неверный тип файла
