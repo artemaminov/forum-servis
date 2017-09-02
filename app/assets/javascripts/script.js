@@ -3,7 +3,8 @@ $(document).ready(function () {
         auto: {
             timeoutDuration: 8000
         },
-        responsive: true
+        responsive: true,
+        swipe: true
     });
 
     $('#offers-carousel').carouFredSel({
