@@ -169,6 +169,9 @@ header nav {
       margin-left: 700px;
       padding-right: 30px;
       display: block; }
+      .carousel.offers .item .text h1, .carousel.offers .item .text p {
+        color: #404040;
+        text-shadow: none; }
       .carousel.offers .item .text h1 {
         position: relative;
         font-size: 1.8em;

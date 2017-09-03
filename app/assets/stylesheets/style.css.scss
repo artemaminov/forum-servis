@@ -209,6 +209,10 @@ header nav {
         margin-left: 700px;
         padding-right: 30px;
         display: block;
+        h1, p {
+          color: $black-grey;
+          text-shadow: none;
+        }
         h1 {
           position: relative;
           font-size: 1.8em;

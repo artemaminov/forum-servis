@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $('#offers-carousel').carouFredSel({
         auto: {
-            timeoutDuration: 8000
+            timeoutDuration: 12000
         },
         responsive: true,
         width: "100%",
