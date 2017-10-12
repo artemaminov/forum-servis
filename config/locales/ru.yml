@@ -33,6 +33,7 @@ ru:
         filename: Файл
     models:
       admin_user: Пользователи
+      attachment: Файл
       pricelist: Прайс-лист
       carousel:
         one: Реклама
