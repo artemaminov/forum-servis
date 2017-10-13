@@ -104,39 +104,6 @@ header {
     top: 71px;
     right: 40px; }
 
-.header.on-top-of-fancybox {
-  position: fixed; }
-
-.on-top-of-fancybox {
-  z-index: 99999999 !important; }
-
-.on-top-of-hack {
-  padding-top: 305px; }
-
-#fancybox {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background-color: transparent;
-  display: none; }
-  #fancybox .sidebar {
-    width: 280px; }
-    #fancybox .sidebar li {
-      padding: 10px;
-      background-color: #ffa700;
-      color: white; }
-  #fancybox .body {
-    background-color: white;
-    padding: 0 20px 150px; }
-    #fancybox .body .images {
-      float: left; }
-      #fancybox .body .images img.main {
-        max-width: 380px; }
-    #fancybox .body .price {
-      clear: both; }
-    #fancybox .body .about {
-      clear: both; }
-
 header nav {
   position: absolute;
   bottom: 32px;
@@ -507,9 +474,6 @@ footer .content {
 
 main, footer {
   position: relative; }
-
-header, main, footer {
-  z-index: 1; }
 
 .spacing {
   display: table-cell;
