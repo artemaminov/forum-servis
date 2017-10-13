@@ -28,23 +28,23 @@ $ ->
       top: "fadeOutDown",
       notTop: "fadeInUp"
 
-#  $("[data-fancybox=offers]").fancybox
-#    loop: false,
-#    infobar: false,
-#    buttons: true,
-#    slideShow: false,
-#    fullScreen: false,
-#    thumbs: false,
-#    closeBtn: true,
-#    iframe:
-#      attr:
-#        scrolling: 'yes'
-#      css:
-#        'width': '100%',
-#        'height': '100%',
-#        'margin': '0',
-#        'padding-top': '300px',
-#        'background-color': 'transparent'
+  $("[data-fancybox]").fancybox
+    loop: false,
+    infobar: false,
+    buttons: true,
+    slideShow: false,
+    fullScreen: false,
+    thumbs: false,
+    closeBtn: true,
+    iframe:
+      scrolling: 'auto',
+      preload: true,
+      css:
+        'width': '100%',
+        'height': '100%',
+        'margin': '0',
+        'padding-top': '300px',
+        'background-color': 'transparent'
 #    onComplete: () ->
 #      $('.carousel').toggleClass('on-top-of-hack')
 #      $('header, .header').toggleClass('on-top-of-fancybox')
