@@ -85,9 +85,12 @@ p {
 
 header {
   height: 305px;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  top: 0;
   background-color: #4e4e4e;
-  color: white; }
+  color: white;
+  z-index: 100; }
   header .header {
     position: absolute;
     top: 140px;
@@ -149,7 +152,8 @@ header nav {
   margin: 2px 0 -58px 0;
   z-index: -1;
   overflow: hidden;
-  background-color: #404040; }
+  background-color: #404040;
+  padding-top: 305px; }
   .carousel.offers {
     position: relative;
     top: -40px;
