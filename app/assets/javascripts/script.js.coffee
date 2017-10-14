@@ -55,7 +55,7 @@ $ ->
   $('.sprites-v2.up.animated').click (event)->
     selector = $(this).data('scrollto')
     if selector == '#top'
-      margin = 20
+      margin = -5
     else
       margin = 0
     $('html, body').animate({ scrollTop: $(selector).offset().top + margin }, 'slow')
