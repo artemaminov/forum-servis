@@ -3,12 +3,4 @@ class Carousel < ActiveRecord::Base
 
   mount_uploader :banner, BannerUploader
 
-  def self.banners
-    where dealer: false
-  end
-
-  def self.offers
-    where dealer: true
-  end
-
 end

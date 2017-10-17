@@ -154,35 +154,6 @@ header nav {
   overflow: hidden;
   background-color: #404040;
   padding-top: 305px; }
-  .carousel.offers {
-    position: relative;
-    top: -40px;
-    margin-bottom: -87px; }
-    .carousel.offers .item .img {
-      width: 700px;
-      height: 400px;
-      float: left;
-      display: block; }
-    .carousel.offers .item .text {
-      height: 400px;
-      background-color: white;
-      margin-left: 700px;
-      padding-right: 30px;
-      display: block; }
-      .carousel.offers .item .text h1, .carousel.offers .item .text p {
-        color: #404040;
-        text-shadow: none; }
-      .carousel.offers .item .text h1 {
-        position: relative;
-        font-size: 1.8em;
-        left: 30px;
-        text-align: left;
-        width: auto; }
-      .carousel.offers .item .text p {
-        position: relative;
-        font-size: 1em;
-        left: 30px;
-        top: 0px; }
   .carousel .item {
     display: inline-block;
     position: relative; }
@@ -202,6 +173,12 @@ header nav {
     text-align: right;
     top: 30px;
     right: 30px; }
+    .carousel h1.world-offer {
+      right: auto;
+      left: 30px;
+      color: #c12e1e;
+      text-align: left;
+      text-decoration: underline; }
   .carousel p {
     font-size: 2em;
     width: 25em;

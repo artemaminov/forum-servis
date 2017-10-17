@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @banners = Carousel.banners
-    @offers_banners = Carousel.offers
+    @banners = Carousel.all
     @pricelist = Pricelist.last
   end
 
