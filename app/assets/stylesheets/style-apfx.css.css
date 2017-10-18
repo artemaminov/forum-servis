@@ -74,10 +74,16 @@ nav, .nav {
 .info-block {
   color: white; }
   .info-block .status {
-    font-size: 0.7em; }
+    font-size: 0.7em;
+    color: white; }
+  .info-block .address {
+    font-size: 1em;
+    margin-top: -0.5em;
+    color: white; }
   .info-block .phone {
     font-size: 2em;
-    font-weight: bold; }
+    font-weight: bold;
+    color: white; }
 
 p {
   font-size: 1em;

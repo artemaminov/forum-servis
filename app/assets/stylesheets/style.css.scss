@@ -96,10 +96,17 @@ nav, .nav {
   color: $white;
   .status {
     font-size: 0.7em;
+    color: $white;
+  }
+  .address {
+    font-size: 1em;
+    margin-top: -0.5em;
+    color: $white;
   }
   .phone {
     font-size: 2em;
     font-weight: bold;
+    color: $white;
   }
 }
 p {
