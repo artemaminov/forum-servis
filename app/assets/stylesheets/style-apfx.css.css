@@ -118,6 +118,9 @@ header {
     position: absolute;
     top: 76px;
     right: 40px; }
+  header .fancybox-buttons {
+    top: 216px;
+    z-index: 100001; }
 
 header nav {
   position: absolute;

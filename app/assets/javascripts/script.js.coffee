@@ -54,12 +54,13 @@ $ ->
         'margin': '0'
         'padding-top': '100px'
         'background-color': 'transparent'
-#    onComplete: () ->
-#      $('.carousel').toggleClass('on-top-of-hack')
-#      $('header, .header').toggleClass('on-top-of-fancybox')
-#    beforeClose: () ->
-#      $('header, .header').toggleClass('on-top-of-fancybox')
-#      $('.carousel').toggleClass('on-top-of-hack')
+    onComplete: () ->
+      $('.fancybox-buttons').show()
+      $('.fancybox-buttons').click () ->
+        $.fancybox.getInstance().close()
+    beforeClose: () ->
+      $('.fancybox-buttons').hide()
+      $('.fancybox-buttons').unbind('click')
 
   $('.sprites-v2.up.animated').click (event)->
     selector = $(this).data('scrollto')
