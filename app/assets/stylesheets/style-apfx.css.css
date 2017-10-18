@@ -97,6 +97,12 @@ header {
   background-color: #4e4e4e;
   color: white;
   z-index: 100; }
+  header.raise-up {
+    height: 210px; }
+    header.raise-up .header {
+      top: 84px; }
+    header.raise-up .BRP-logo {
+      top: 20px; }
   header .header {
     position: absolute;
     top: 140px;
@@ -105,12 +111,12 @@ header {
     header .header .info-block {
       margin-left: 55px;
       position: relative;
-      top: -19px;
-      height: 115px;
+      top: -28px;
+      height: 135px;
       padding-top: 10px; }
   header .BRP-logo {
     position: absolute;
-    top: 71px;
+    top: 76px;
     right: 40px; }
 
 header nav {

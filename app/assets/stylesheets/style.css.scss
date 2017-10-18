@@ -122,6 +122,16 @@ header {
   background-color: $dark-grey;
   color: $white;
   z-index: 100;
+  &.raise-up {
+    height: 210px;
+    .header {
+      top: 84px;
+
+    }
+    .BRP-logo {
+      top: 20px;
+    }
+  }
   .header {
     position: absolute;
     top: 140px;
@@ -130,14 +140,14 @@ header {
     .info-block {
       margin-left: 55px;
       position: relative;
-      top: -19px;
-      height: 115px;
+      top: -28px;
+      height: 135px;
       padding-top: 10px;
     }
   }
   .BRP-logo {
     position: absolute;
-    top: 71px;
+    top: 76px;
     right: 40px;
   }
 }

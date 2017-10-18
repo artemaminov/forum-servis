@@ -27,6 +27,15 @@ $ ->
       unpinned: "",
       top: "fadeOutDown",
       notTop: "fadeInUp"
+  $('header').headroom
+    offset: 300
+    tolerance: 100
+    classes:
+      initial: ""
+      pinned: ""
+      unpinned: ""
+      top: ""
+      notTop: "raise-up"
 
   $("[data-fancybox]").fancybox
     loop: false,
