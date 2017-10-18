@@ -8,24 +8,24 @@ $ ->
   $('#offers-carousel').carouFredSel
     auto:
       timeoutDuration: 12000
-    responsive: true,
-    width: "100%",
-    align: "center",
+    responsive: true
+    width: "100%"
+    align: "center"
     scroll:
       items: 1
-    swipe: true,
+    swipe: true
     items:
-      visible: 1,
+      visible: 1
       height: 400
 
   $('.up').headroom
-    offset: 300,
-    tolerance: 100,
+    offset: 300
+    tolerance: 100
     classes:
-      initial: "",
-      pinned: "",
-      unpinned: "",
-      top: "fadeOutDown",
+      initial: ""
+      pinned: ""
+      unpinned: ""
+      top: "fadeOutDown"
       notTop: "fadeInUp"
   $('header').headroom
     offset: 300
@@ -38,16 +38,16 @@ $ ->
       notTop: "raise-up"
 
   $("[data-fancybox]").fancybox
-    loop: false,
-    infobar: false,
-    buttons: true,
-    slideShow: false,
-    fullScreen: false,
-    thumbs: false,
-    closeBtn: true,
+    loop: false
+    infobar: false
+    buttons: true
+    slideShow: false
+    fullScreen: false
+    thumbs: false
+    closeBtn: true
     iframe:
-      scrolling: 'auto',
-      preload: true,
+      scrolling: 'auto'
+      preload: true
       css:
         'width': '100%'
         'height': '100%'
