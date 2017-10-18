@@ -49,10 +49,10 @@ $ ->
       scrolling: 'auto',
       preload: true,
       css:
-        'width': '100%',
-        'height': '100%',
-        'margin': '0',
-        'padding-top': '300px',
+        'width': '100%'
+        'height': '100%'
+        'margin': '0'
+        'padding-top': '100px'
         'background-color': 'transparent'
 #    onComplete: () ->
 #      $('.carousel').toggleClass('on-top-of-hack')
