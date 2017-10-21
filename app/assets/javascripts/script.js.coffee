@@ -69,26 +69,3 @@ $ ->
     else
       margin = 0
     $('html, body').animate({ scrollTop: $(selector).offset().top + margin }, 'slow')
-
-#  $.ajax
-#    url: "some.html"
-#    dataType: "html"
-#    error: (jqXHR, textStatus, errorThrown) ->
-#      $('body').append "AJAX Error: #{textStatus}"
-#    success: (data, textStatus, jqXHR) ->
-#      $('body').append "Successful AJAX call: #{data}"
-
-#  $("a[data-fancy]").ajaxError (event, data, settings, thrownError) ->
-#    console.log(thrownError)
-#
-#  $("a[data-fancy]").ajaxSuccess (event, data, settings) ->
-#    e.preventDefault()
-#    $('.fancybox-slide--ajax').html(data)
-#    alert data
-#    switch data.type
-#      when "root"
-#        alert "root"
-#      when "subcategory"
-#        alert "subcategory"
-#      when "list"
-#        alert "list"
