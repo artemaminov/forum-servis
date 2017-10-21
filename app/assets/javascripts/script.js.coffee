@@ -30,12 +30,12 @@ $ ->
   $('header').headroom
     offset: 300
     tolerance: 100
-    classes:
-      initial: ""
-      pinned: ""
-      unpinned: ""
-      top: ""
-      notTop: "raise-up"
+    onTop: () ->
+      $('header').animate({ height: '305px' }, 200, 'swing').css('overflow', 'visible')
+      $('header .header').animate({ top: '140px' }, 200, 'swing')
+    onNotTop: () ->
+      $('header').animate({ height: '210px' }, 200, 'swing').css('overflow', 'visible')
+      $('header .header').animate({ top: '84px' }, 200, 'swing')
 
   $("[data-fancybox]").fancybox
     loop: false

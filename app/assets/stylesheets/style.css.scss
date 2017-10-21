@@ -122,16 +122,6 @@ header {
   background-color: $dark-grey;
   color: $white;
   z-index: 100000;
-  &.raise-up {
-    height: 210px;
-    .header {
-      top: 84px;
-
-    }
-    .BRP-logo {
-      top: 20px;
-    }
-  }
   .header {
     position: absolute;
     top: 140px;
@@ -147,8 +137,8 @@ header {
   }
   .BRP-logo {
     position: absolute;
-    top: 76px;
-    right: 40px;
+    top: -12px;
+    right: -100px;
   }
   .fancybox-buttons {
     top: 216px;
