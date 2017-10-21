@@ -35,7 +35,7 @@ $ ->
       $('header .header').animate({ top: '140px' }, 200, 'swing')
     onNotTop: () ->
       $('header').animate({ height: '210px' }, 200, 'swing').css('overflow', 'visible')
-      $('header .header').animate({ top: '84px' }, 200, 'swing')
+      $('header .header').animate({ top: '92px' }, 200, 'swing')
 
   $("[data-fancybox]").fancybox
     loop: false
