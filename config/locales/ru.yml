@@ -29,6 +29,8 @@ ru:
         banner: Изображение
         created_at: Создан
         updated_at: Изменен
+        link: Ссылка
+        new_window: Открыть в новом окне
       pricelist:
         filename: Файл
     models:

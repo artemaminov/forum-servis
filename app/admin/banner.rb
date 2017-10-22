@@ -19,6 +19,8 @@ ActiveAdmin.register Carousel do
       f.input :dealer
       f.input :header
       f.input :body
+      f.input :link
+      f.input :new_window
       f.input :banner
     end
     f.actions
