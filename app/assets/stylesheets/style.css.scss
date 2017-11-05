@@ -248,36 +248,6 @@ header nav {
 #offers {
   height: 84px;
 }
-.brp-news, .our-news {
-  height: 600px;
-  width: 1080px;
-  padding-bottom: 40px;
-  .body {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 100%;
-    .item {
-      clear: both;
-      border-bottom: 1px solid #ffd204;
-      margin-bottom: 20px;
-      .date, .title {
-        font-size: 1.1em;
-      }
-      .title {
-        padding-bottom: 10px;
-      }
-      .desc {
-        padding-bottom: 10px;
-      }
-      img {
-        border: 5px solid #ffd204;
-        width: 240px;
-        float: left;
-        margin: 0 10px 10px 0;
-      }
-    }
-  }
-}
 
 .brands {
   .table {
@@ -303,11 +273,47 @@ header nav {
 }
 .about {
   .header {
-    width: 640px;
-    border-right: $white-thin-border;
-    padding-right: 30px;
+    &.fleft {
+      width: 680px;
+      border-right: $white-thin-border;
+    }
+    .our-news {
+      height: 979px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      padding-right: 30px;
+      article {
+        border-bottom: 1px solid white;
+        margin-bottom: 2em;
+        &:last-child {
+          border: none;
+        }
+        iframe {
+          width: 630px;
+          height: 350px;
+        }
+        img {
+          max-width: 630px;
+        }
+        h1 {
+          color: #dedede;
+          font-size: 6em;
+          position: relative;
+          margin-bottom: 0.1em;
+          padding: 0;
+          span {
+            padding-bottom: 8px;
+            position: absolute;
+            left: 0;
+            font-size: 0.3em;
+            color: #404040;
+            bottom: 0;
+            font-family: 'Franklin Gothic Demi Cond';
+          }
+        }
+      }
+    }
     .body {
-      margin-top: 22px;
       border-spacing: 0px 10px;
       &.table {
         display: table;
@@ -323,48 +329,17 @@ header nav {
               color: #d84646;
             }
             &+p {
-              margin-top: -25px;
-              text-align: center;
-            }
-          }
-          &.img {
-            position: relative;
-            img {
-              border-color: #d84646;
-            }
-            a {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-              bottom: 0;
-              text-align: center;
-              left: 0;
-              span {
-                position: relative;
-                top: 35%;
-                color: white;
-                font: 2em 'Franklin Gothic Demi Cond';
-              }
+              margin-top: -4em;
             }
           }
           p {
-            vertical-align: top;
             padding-bottom: 1em;
           }
         }
-        img {
-          border: $grey-border;
-        }
-        &:nth-child(odd) {
-          p, h1 {
-            padding-right: 30px;
-          }
-        }
-        &:nth-child(even) {
-          p, h1 {
-            padding-left: 30px;
-          }
-        }
+      }
+      img, iframe {
+        border: $grey-border;
+        margin: 15px 0;
       }
       &:after {
         content: "";
@@ -374,9 +349,7 @@ header nav {
     }
   }
   aside {
-    .vk {
-      border: $grey-border;
-    }
+    width: 369px;
   }
   .icons {
     .list {

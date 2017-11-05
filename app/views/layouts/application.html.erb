@@ -56,67 +56,43 @@
     <h1 class="section-title center">О компании</h1>
     <div class="content btcf">
       <div class="fleft header">
-        <h2>BRP<span> Центр Тюмень</span></h2>
-        <div class="body table">
-          <div class="row">
-            <div class="cell">
-              <h3>Нет ничего более ценного, чем ваше свободное время.</h3>
-              <p>Вот почему BRP посвятил всю свою работу поиску новых решений на пути к активному отдыху.</p>
-              <p>70 лет инноваций и слаженная работа команды сделали технику BRP № 1 в мире.</p>
-            </div>
-            <div class="cell">
-              <%= image_tag 'team-inside.jpg' %>
-            </div>
-          </div>
-          <div class="row">
-            <div class="cell">
-              <%= image_tag 'team-outside-2.jpg' %>
-            </div>
-            <div class="cell">
-              <p>Снег, вода, лес, песок, слякоть, бездорожье под колесами и страсть к приключениям наполняет атмосферу незабываемыми и волнующими эмоциями в вашей жизни!</p>
-              <p>Каждый человек имеет право наслаждаться отдыхом.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="cell">
-              <p>Дмитрий выбрал надежный квадроцикл Can-Am Outlander 650 MAX XT для охоты и рыбалки. Алексей предпочитает покорять дикие склоны Алтая на снегоходе Ski-Doo Summit X 850. Татьяна любит водный экстрим на гидроцикле Sea-Doo Spark Trixx, а Стас выглядит эпически на новом Spyder F3. Всех нас объединяет страсть к активному отдыху.</p>
-                <p>Мы по достоинству оценили технику BRP.
-                <br>Теперь предлагаем оценить её вам.</p>
-            </div>
-            <div class="cell">
-              <%= image_tag 'team-outside.jpg' %>
-            </div>
-          </div>
-
-          <% unless @pricelist.blank? %>
-          <div class="row">
-            <div class="cell">
-              <h2><a href="<%= @pricelist.filename.url %>">ТЕХНИКА В НАЛИЧИИ (СКАЧАТЬ)</a></h2>
-            </div>
-          </div>
-          <% end %>
-        </div>
-
-        <div class="body table">
-          <div class="row">
-            <div class="cell">
-              <h1 class="center">W<i>E</i>LCOME TO BRP CLUB!</h1>
-              <p>Команда BRP Центр Тюмень.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <aside class="fright">
         <h2>Наши<span> Новости</span></h2>
+        <div class="our-news">
+          <%= render partial: 'shared/news' %>
+        </div>
+      </div>
+      <aside class="fright header">
+        <h2>BRP<span> Центр Тюмень</span></h2>
         <div class="vk">
-          <script type="text/javascript" src="//vk.com/js/api/openapi.js?109"></script>
+          <div class="body">
 
-          <!-- VK Widget -->
-          <div id="vk_groups"></div>
-          <script type="text/javascript">
-              VK.Widgets.Group("vk_groups", {mode: 2, width: "356", height: "1005"}, 26281247);
-          </script>
+                <h3>Нет ничего более ценного, чем ваше свободное время.</h3>
+                <p>Вот почему BRP посвятил всю свою работу поиску новых решений на пути к активному отдыху.</p>
+                <p>70 лет инноваций и слаженная работа команды сделали технику BRP № 1 в мире.</p>
+
+                <%= image_tag 'team-inside.jpg' %>
+
+                <p>Снег, вода, лес, песок, слякоть, бездорожье под колесами и страсть к приключениям наполняет атмосферу незабываемыми и волнующими эмоциями в вашей жизни!</p>
+                <p>Каждый человек имеет право наслаждаться отдыхом.</p>
+
+                <p>Дмитрий выбрал надежный квадроцикл Can-Am Outlander 650 MAX XT для охоты и рыбалки. Алексей предпочитает покорять дикие склоны Алтая на снегоходе Ski-Doo Summit X 850. Татьяна любит водный экстрим на гидроцикле Sea-Doo Spark Trixx, а Стас выглядит эпически на новом Spyder F3. Всех нас объединяет страсть к активному отдыху.</p>
+                <p>Мы по достоинству оценили технику BRP.
+                  <br>Теперь предлагаем оценить её вам.</p>
+
+            <% unless @pricelist.blank? %>
+                  <h2><a href="<%= @pricelist.filename.url %>">ТЕХНИКА В НАЛИЧИИ (СКАЧАТЬ)</a></h2>
+            <% end %>
+          </div>
+
+          <div class="body table">
+            <div class="row">
+              <div class="cell">
+                <h1>W<i>E</i>LCOME TO BRP CLUB!</h1>
+                <p>Команда BRP Центр Тюмень.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </aside>
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20171022114930) do
+ActiveRecord::Schema.define(:version => 20171022141750) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string    "resource_id",                :null => false
@@ -65,45 +65,17 @@ ActiveRecord::Schema.define(:version => 20171022114930) do
     t.boolean   "new_window"
   end
 
-  create_table "item_specs", :id => false, :force => true do |t|
-    t.integer "item_id"
-    t.integer "spec_id"
+  create_table "news", :force => true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
-
-  add_index "item_specs", ["item_id"], :name => "index_item_specs_on_item_id"
-  add_index "item_specs", ["spec_id"], :name => "index_item_specs_on_spec_id"
-
-  create_table "items", :force => true do |t|
-    t.integer  "position"
-    t.string   "title",       :null => false
-    t.integer  "cover"
-    t.text     "description"
-    t.integer  "price"
-    t.integer  "category_id"
-    t.integer  "specs_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.string   "ancestry"
-  end
-
-  add_index "items", ["ancestry"], :name => "index_items_on_ancestry"
 
   create_table "pricelists", :force => true do |t|
     t.timestamp "created_at", :limit => 6, :null => false
     t.timestamp "updated_at", :limit => 6, :null => false
     t.string    "filename"
   end
-
-  create_table "specs", :force => true do |t|
-    t.string   "title"
-    t.string   "spec"
-    t.integer  "position"
-    t.string   "ancestry"
-    t.integer  "item_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "specs", ["ancestry"], :name => "index_specs_on_ancestry"
 
 end

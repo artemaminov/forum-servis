@@ -33,6 +33,13 @@ ru:
         new_window: Открыть в новом окне
       pricelist:
         filename: Файл
+      news:
+        content: Текст
+        title: Заголовок
+        created_at: Создан
+        updated_at: Изменен
+        attachments: Изображения
+        cover: Обложка
     models:
       admin_user: Пользователи
       attachment: Файл
@@ -42,9 +49,33 @@ ru:
         few: Реклама
         many: Рекламы
         other: Рекламу
+      news:
+        one: Новость
+        few: Новость
+        many: Новостей
+        other: Новость
   errors:
     messages:
       extension_white_list_error: Неверный тип файла
   formtastic:
     create: Создать %{model}
     update: Сохранить изменения
+  date:
+      abbr_month_names:
+      -
+      - янв
+      - фев
+      - мрт
+      - апр
+      - май
+      - июн
+      - июл
+      - авг
+      - сен
+      - окт
+      - нбр
+      - дек
+  time:
+    am: утра
+    formats:
+      forum: ! '%d%b%y'
