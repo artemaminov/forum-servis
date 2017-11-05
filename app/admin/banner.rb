@@ -2,6 +2,11 @@
 ActiveAdmin.register Carousel do
   menu :priority => 3, :label => "Реклама"
 
+  filter :header
+  filter :body
+  filter :created_at, as: :date_range
+  filter :updated_at, as: :date_range
+
   index do
     column :dealer do |is_it|
       is_it.dealer ? '✓' : ''

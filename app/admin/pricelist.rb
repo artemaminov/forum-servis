@@ -7,6 +7,8 @@ ActiveAdmin.register Pricelist do
     default_actions
   end
 
+  config.filters = false
+
   form do |f|
     f.inputs "Техника в наличии (прайс-лист)" do
       f.input :filename
