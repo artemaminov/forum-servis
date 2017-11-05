@@ -43,7 +43,6 @@ ru:
     models:
       admin_user: Пользователи
       attachment: Файл
-      pricelist: Прайс-лист
       carousel:
         one: Реклама
         few: Реклама
@@ -54,6 +53,7 @@ ru:
         few: Новость
         many: Новостей
         other: Новость
+      pricelist: Прайс-лист
   errors:
     messages:
       extension_white_list_error: Неверный тип файла
