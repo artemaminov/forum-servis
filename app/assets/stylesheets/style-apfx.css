@@ -195,13 +195,10 @@ header nav {
     bottom: 30px;
     left: 60px; }
 
-#offers, #brands, #about, #contacts, #footer {
+#brands, #about, #contacts, #footer {
   position: absolute;
   z-index: 1;
   width: 100%; }
-
-#offers {
-  height: 84px; }
 
 .brands .table {
   display: table;
@@ -347,24 +344,6 @@ footer .content {
   margin: 0;
   padding: 0;
   bottom: 0; }
-  footer .content .social a {
-    display: block;
-    background: url("sprites.png") no-repeat transparent;
-    width: 22px;
-    height: 22px;
-    float: left; }
-  footer .content .social .vk {
-    background-position: -839px -173px; }
-    footer .content .social .vk:hover {
-      background-position: -839px -102px; }
-  footer .content .social .fb {
-    background-position: -839px -149px; }
-    footer .content .social .fb:hover {
-      background-position: -839px -78px; }
-  footer .content .social .odnoklassniki {
-    background-position: -839px -125px; }
-    footer .content .social .odnoklassniki:hover {
-      background-position: -839px -54px; }
   footer .content .copyright {
     font-size: 0.7em;
     width: 16em;
