@@ -2,14 +2,7 @@
   <% unless @banners.empty? %>
     <% @banners.each do |banner| %>
     <div class="item">
-      <% if banner.link.empty? %>
-        <% if banner.dealer? %>
-          <h1 class="world-offer">Акция</h1>
-        <% end %>
-        <h1 class="title"><%= banner.header.html_safe %></h1>
-        <p class="body"><%= banner.body %></p>
-        <div class="img" style="background-image: url(<%= banner.banner.url %>)"></div>
-      <% else %>
+      <% if banner.link? %>
         <% new_window = banner.new_window ? 'target="_blank"' : '' %>
         <% if banner.dealer? %>
           <a href="<%= banner.link %>" <%= new_window %>><h1 class="world-offer">Акция</h1></a>
@@ -17,6 +10,13 @@
         <a href="<%= banner.link %>" <%= new_window %>><h1 class="title"><%= banner.header.html_safe %></h1></a>
         <a href="<%= banner.link %>" <%= new_window %>><p class="body"><%= banner.body %></p></a>
         <a href="<%= banner.link %>" <%= new_window %>><div class="img" style="background-image: url(<%= banner.banner.url %>)"></div></a>
+      <% else %>
+        <% if banner.dealer? %>
+          <h1 class="world-offer">Акция</h1>
+        <% end %>
+        <h1 class="title"><%= banner.header.html_safe %></h1>
+        <p class="body"><%= banner.body %></p>
+        <div class="img" style="background-image: url(<%= banner.banner.url %>)"></div>
       <% end %>
     </div>
     <% end %>
