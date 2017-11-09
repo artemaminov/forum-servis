@@ -19,9 +19,9 @@ ActiveAdmin.register News do
     f.inputs 'Новости' do
       f.input :title
       f.input :content, input_html: { data: { provider: :summernote }}
-      f.has_many :cover, allow_destroy: true do |f|
-        f.input :filename, as: :file, hint: f.object.filename.url ? image_tag(f.object.filename.url(:thumb)) : ''
-      end
+      # f.has_many :cover, allow_destroy: true do |f|
+      #   f.input :filename, as: :file, hint: f.object.filename.url ? image_tag(f.object.filename.url(:thumb)) : ''
+      # end
     end
     f.actions
   end
