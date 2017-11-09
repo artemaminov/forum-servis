@@ -4,9 +4,9 @@ $ ->
       lang: 'ru-RU'
       toolbar: [
         ['style', ['bold', 'italic', 'underline', 'strikethrough', 'clear']],
-        ['para', ['ul', 'ol', 'paragraph', 'clean']],
+        ['para', ['ul', 'ol']],
         ['insert', ['picture', 'link', 'video']],
-        ['misc', ['fullscreen', 'codeview', 'undo', 'redo', 'help']]
+        ['misc', ['fullscreen', 'codeview', 'undo', 'redo']]
       ]
       callbacks:
         onImageUpload: (files) ->
