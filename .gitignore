@@ -20,3 +20,4 @@
 /.env
 db-backup
 *.codekit3
+/db-backup-local
