@@ -227,8 +227,9 @@ header nav {
   overflow-y: scroll;
   padding-right: 30px; }
   .about .header .our-news article {
-    border-bottom: 1px solid white;
-    margin-bottom: 2em; }
+    border-bottom: 1px dashed #dedede;
+    margin-bottom: 2em;
+    padding-bottom: 2em; }
     .about .header .our-news article:last-child {
       border: none; }
     .about .header .our-news article iframe {
@@ -250,6 +251,10 @@ header nav {
         color: #404040;
         bottom: 0;
         font-family: 'Franklin Gothic Demi Cond'; }
+    .about .header .our-news article a[data-fancybox]:nth-child(odd) {
+      margin-right: 8px; }
+    .about .header .our-news article a[data-fancybox] img {
+      width: 300px; }
 
 .about .header .body {
   border-spacing: 0px 10px; }

@@ -280,8 +280,9 @@ header nav {
       overflow-y: scroll;
       padding-right: 30px;
       article {
-        border-bottom: 1px solid white;
+        border-bottom: 1px dashed #dedede;
         margin-bottom: 2em;
+        padding-bottom: 2em;
         &:last-child {
           border: none;
         }
@@ -306,6 +307,14 @@ header nav {
             color: #404040;
             bottom: 0;
             font-family: 'Franklin Gothic Demi Cond';
+          }
+        }
+        a[data-fancybox] {
+          &:nth-child(odd) {
+            margin-right: 8px;
+          }
+          img {
+            width: 300px;
           }
         }
       }

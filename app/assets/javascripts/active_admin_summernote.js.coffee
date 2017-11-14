@@ -34,10 +34,14 @@ $ ->
       beforeSend: (xhr, opts) ->
         xhr.setRequestHeader 'X-CSRF-Token', $('meta[name="csrf-token"]').attr('content')
       success: (data) ->
-        img = document.createElement('IMG')
-        img.src = data.filename.url
-        img.setAttribute('id', data.id)
-        $(that).summernote 'insertNode', img
+        aImg = document.createElement 'a'
+        aImg.setAttribute 'href', data.filename.url
+        aImg.dataset.fancybox = 'news-gallery'
+        img = document.createElement 'img'
+        img.src = data.filename.catalog_main.url
+        img.setAttribute 'id', data.id
+        aImg.appendChild img
+        $(that).summernote 'insertNode', aImg
 
   deleteFile = (file_id) ->
     $.ajax
