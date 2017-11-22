@@ -33,10 +33,13 @@ class AttachmentUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
   version :catalog_main do
-    process :resize_to_fit => [380, 0]
+    process :resize_to_limit => [380, 0]
+    end
+  version :news, if: :news_image? do
+    process :resize_to_limit => [614, 0]
   end
   version :thumb do
-    process :resize_to_fit => [100, 0]
+    process :resize_to_limit => [100, 0]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
@@ -56,5 +59,15 @@ class AttachmentUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+
+  protected
+    def news_image?(file)
+      p model
+      p file
+      unless model.attachable_type.nil?
+        return model.attachable_type == "News"
+      end
+      true
+    end
 
 end

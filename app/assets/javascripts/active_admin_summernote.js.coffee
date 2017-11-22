@@ -1,22 +1,68 @@
 $ ->
+  resize = (context, x, style) ->
+    $editable = context.layoutInfo.editable
+    $img = $($editable.data('target'))
+    $img.parent().removeClass()
+    $img.parent().addClass(style)
+    context.invoke('editor.resizeTo', { x: x, y: '' }, $img)
+    context.invoke('imagePopover.hide')
+    context.invoke('handle.hide')
+  OneInARowButton = (context) ->
+    ui = $.summernote.ui
+    button = ui.button({
+      contents: '<i class="fa fa-child"/> 1/1',
+      tooltip: 'Изображение во всю ширину или вернуть оригинальный размер',
+      click: () ->
+        resize context, 'auto', 'one-in-a-row'
+    }).render()
+  TwoInARowButton = (context) ->
+    ui = $.summernote.ui
+    button = ui.button({
+      contents: '<i class="fa fa-child"/> 1/2',
+      tooltip: 'Изображение в половину ширины',
+      click: () ->
+        resize context, '300px', 'two-in-a-row'
+    }).render()
+  FourInARowButton = (context) ->
+    ui = $.summernote.ui
+    button = ui.button({
+      contents: '<i class="fa fa-child"/> 1/4',
+      tooltip: 'Изображение в 1/4 ширины',
+      click: () ->
+        resize context, '143px', 'four-in-a-row'
+    }).render()
+
   $('[data-provider="summernote"]').each ->
-    $(this).summernote(
+    $(this).summernote({
       lang: 'ru-RU'
+      shortcuts: false
       toolbar: [
         ['style', ['bold', 'italic', 'underline', 'strikethrough', 'clear']],
         ['para', ['ul', 'ol']],
         ['insert', ['picture', 'link', 'video']],
         ['misc', ['fullscreen', 'codeview', 'undo', 'redo']]
       ]
-      callbacks:
+      popover: {
+        image: [
+          ['size', ['oneinarow', 'twoinarow', 'fourinarow']]
+          ['remove', ['removeMedia']]
+        ]
+      }
+      callbacks: {
         onImageUpload: (files) ->
           img = sendFile(this, files[0])
         onMediaDelete: (target, editor, editable) ->
           image_id = target[0].id
           if !!image_id
             deleteFile image_id
-          target.remove()
-    )
+            $("""a[data-image-id="#{image_id}"]""").remove()
+      }
+      buttons: {
+        oneinarow: OneInARowButton
+        twoinarow: TwoInARowButton
+        fourinarow: FourInARowButton
+      }
+    })
 
   sendFile = (that, file) ->
     data = new FormData
@@ -36,9 +82,10 @@ $ ->
       success: (data) ->
         aImg = document.createElement 'a'
         aImg.setAttribute 'href', data.filename.url
+        aImg.dataset.imageId = data.id
         aImg.dataset.fancybox = 'news-gallery'
         img = document.createElement 'img'
-        img.src = data.filename.catalog_main.url
+        img.src = data.filename.news.url
         img.setAttribute 'id', data.id
         aImg.appendChild img
         $(that).summernote 'insertNode', aImg

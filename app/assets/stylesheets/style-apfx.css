@@ -236,10 +236,10 @@ header nav {
     .about .header .our-news article:last-child {
       border: none; }
     .about .header .our-news article iframe {
-      width: 630px;
-      height: 350px; }
+      width: 614px;
+      height: 330px; }
     .about .header .our-news article img {
-      max-width: 630px; }
+      max-width: 614px; }
     .about .header .our-news article h1 {
       color: #dedede;
       font-size: 6em;
@@ -254,10 +254,17 @@ header nav {
         color: #404040;
         bottom: 0;
         font-family: 'Franklin Gothic Demi Cond'; }
-    .about .header .our-news article a[data-fancybox]:nth-child(odd) {
-      margin-right: 8px; }
-    .about .header .our-news article a[data-fancybox] img {
-      width: 300px; }
+    .about .header .our-news article a[data-fancybox] {
+      margin-right: 0;
+      display: inline-block;
+      vertical-align: top;
+      line-height: normal; }
+      .about .header .our-news article a[data-fancybox].one-in-a-row {
+        margin-right: 4px; }
+      .about .header .our-news article a[data-fancybox].two-in-a-row:nth-child(even) {
+        margin-right: 4px; }
+      .about .header .our-news article a[data-fancybox].four-in-a-row {
+        margin-right: 4px; }
 
 .about .header .body {
   border-spacing: 0px 10px; }
@@ -276,8 +283,7 @@ header nav {
       .about .header .body .row .cell p {
         padding-bottom: 1em; }
   .about .header .body img, .about .header .body iframe {
-    border: 10px solid #707070;
-    margin: 15px 0; }
+    border: 5px solid #707070; }
   .about .header .body:after {
     content: "";
     display: block;

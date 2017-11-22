@@ -28,7 +28,7 @@ $grey: #707070;
 $dark-grey: #4e4e4e;
 $black-grey: #404040;
 
-$grey-border: 10px solid $grey;
+$grey-border: 5px solid $grey;
 $white-thin-border: 1px solid $white;
 
 html, body {
@@ -290,11 +290,11 @@ header nav {
           border: none;
         }
         iframe {
-          width: 630px;
-          height: 350px;
+          width: 614px;
+          height: 340px;
         }
         img {
-          max-width: 630px;
+          max-width: 614px;
         }
         h1 {
           color: #dedede;
@@ -313,11 +313,18 @@ header nav {
           }
         }
         a[data-fancybox] {
-          &:nth-child(odd) {
-            margin-right: 8px;
+          margin-right: 0;
+          display: inline-block;
+          vertical-align: top;
+          line-height: normal;
+          &.one-in-a-row {
+            margin-right: 4px;
           }
-          img {
-            width: 300px;
+          &.two-in-a-row:nth-child(even) {
+            margin-right: 4px;
+          }
+          &.four-in-a-row {
+            margin-right: 4px;
           }
         }
       }
@@ -348,7 +355,6 @@ header nav {
       }
       img, iframe {
         border: $grey-border;
-        margin: 15px 0;
       }
       &:after {
         content: "";

@@ -1,41 +1,50 @@
 $ ->
-  $('#carousel').carouFredSel
-    auto:
+  $('#carousel').carouFredSel {
+    auto: {
       timeoutDuration: 8000
+    }
     responsive: true,
     swipe: true
+  }
 
-  $('#offers-carousel').carouFredSel
-    auto:
+  $('#offers-carousel').carouFredSel {
+    auto: {
       timeoutDuration: 12000
+    }
     responsive: true
     width: "100%"
     align: "center"
-    scroll:
+    scroll: {
       items: 1
+    }
     swipe: true
-    items:
+    items: {
       visible: 1
       height: 400
+    }
+  }
 
-  $('.up').headroom
+  $('.up').headroom {
     offset: 300
     tolerance: 100
-    classes:
+    classes: {
       initial: ""
       pinned: ""
       unpinned: ""
       top: "fadeOutDown"
       notTop: "fadeInUp"
-  $('header').headroom
+    }
+  }
+  $('header').headroom {
     offset: 300
     tolerance: 100
     onTop: () ->
-      $('header').animate({ height: '305px' }, 200, 'swing').css('overflow', 'visible')
-      $('header .header').animate({ top: '140px' }, 200, 'swing')
+      $('header').animate({height: '305px'}, 200, 'swing').css('overflow', 'visible')
+      $('header .header').animate({top: '140px'}, 200, 'swing')
     onNotTop: () ->
-      $('header').animate({ height: '210px' }, 200, 'swing').css('overflow', 'visible')
-      $('header .header').animate({ top: '92px' }, 200, 'swing')
+      $('header').animate({height: '210px'}, 200, 'swing').css('overflow', 'visible')
+      $('header .header').animate({top: '92px'}, 200, 'swing')
+  }
 
   $("[data-fancybox]").fancybox {
     infobar: false
