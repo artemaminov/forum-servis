@@ -141,8 +141,11 @@ header {
     right: -100px;
   }
   .fancybox-buttons {
+    position: absolute;
     top: 216px;
+    right: 0;
     z-index: 100001;
+    display: none;
   }
 }
 

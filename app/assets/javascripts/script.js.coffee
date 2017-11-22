@@ -37,30 +37,46 @@ $ ->
       $('header').animate({ height: '210px' }, 200, 'swing').css('overflow', 'visible')
       $('header .header').animate({ top: '92px' }, 200, 'swing')
 
-  $("[data-fancybox]").fancybox
-    loop: false
+  $("[data-fancybox]").fancybox {
     infobar: false
-    buttons: true
-    slideShow: false
-    fullScreen: false
-    thumbs: false
-    closeBtn: true
-    iframe:
-      scrolling: 'auto'
+    toolbar: false
+    arrows: false
+    iframe: {
+      attr: {
+        scrolling: 'auto'
+      }
       preload: true
-      css:
+      css: {
         'width': '100%'
+        'max-width': '100%'
         'height': '100%'
+        'max-height': '100%'
         'margin': '0'
-        'padding-top': '100px'
+        'padding-top': '99px'
         'background-color': 'transparent'
-    onComplete: () ->
+      }
+    }
+    beforeShow: () ->
       $('.fancybox-buttons').show()
       $('.fancybox-buttons').click () ->
         $.fancybox.getInstance().close()
     beforeClose: () ->
       $('.fancybox-buttons').hide()
       $('.fancybox-buttons').unbind('click')
+  }
+
+  $('[data-fancybox="news-gallery"]').fancybox {
+    toolbar: false
+    infobar: false
+    margin: [200, 100]
+    beforeShow: () ->
+      $('.fancybox-buttons').show()
+      $('.fancybox-buttons').click () ->
+        $.fancybox.getInstance().close()
+    beforeClose: () ->
+      $('.fancybox-buttons').hide()
+      $('.fancybox-buttons').unbind('click')
+  }
 
   $('.sprites-v2.up.animated').click (event)->
     selector = $(this).data('scrollto')
