@@ -120,6 +120,7 @@ header {
   position: fixed;
   top: 0;
   background-color: $dark-grey;
+  border-bottom: 10px solid $grey;
   color: $white;
   z-index: 100000;
   .header {
@@ -130,7 +131,7 @@ header {
     .info-block {
       margin-left: 55px;
       position: relative;
-      top: -28px;
+      top: -17px;
       height: 125px;
       padding-top: 10px;
     }
@@ -172,7 +173,7 @@ header nav {
 .navigation-svg {
   width: 100%;
   display: table;
-  bottom: -30px;
+  bottom: -39px;
   position: absolute;
   .row {
     display: table-row;

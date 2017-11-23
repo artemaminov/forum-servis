@@ -40,10 +40,12 @@ $ ->
     tolerance: 100
     onTop: () ->
       $('header').animate({height: '305px'}, 200, 'swing').css('overflow', 'visible')
+      $('header .navigation-svg').animate({bottom: '-39px'}, 20, 'swing')
       $('header .header').animate({top: '140px'}, 200, 'swing')
     onNotTop: () ->
-      $('header').animate({height: '210px'}, 200, 'swing').css('overflow', 'visible')
-      $('header .header').animate({top: '92px'}, 200, 'swing')
+      $('header').animate({height: '140px'}, 200, 'swing').css('overflow', 'visible')
+      $('header .navigation-svg').animate({bottom: '305px'}, 20, 'swing')
+      $('header .header').animate({top: '70px'}, 200, 'swing')
   }
 
   $("[data-fancybox]").fancybox {
