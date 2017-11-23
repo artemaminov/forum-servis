@@ -7,13 +7,21 @@ $ ->
     context.invoke('editor.resizeTo', { x: x, y: '' }, $img)
     context.invoke('imagePopover.hide')
     context.invoke('handle.hide')
+  ResetImageSizeButton = (context) ->
+    ui = $.summernote.ui
+    button = ui.button({
+      contents: '<i class="fa fa-child"/> Оригинальный размер',
+      tooltip: 'Вернуть оригинальный размер',
+      click: () ->
+        resize context, 'auto', 'one-in-a-row'
+    }).render()
   OneInARowButton = (context) ->
     ui = $.summernote.ui
     button = ui.button({
       contents: '<i class="fa fa-child"/> 1/1',
-      tooltip: 'Изображение во всю ширину или вернуть оригинальный размер',
+      tooltip: 'Изображение во всю ширину',
       click: () ->
-        resize context, 'auto', 'one-in-a-row'
+        resize context, '614px', 'one-in-a-row'
     }).render()
   TwoInARowButton = (context) ->
     ui = $.summernote.ui
@@ -44,7 +52,7 @@ $ ->
       ]
       popover: {
         image: [
-          ['size', ['oneinarow', 'twoinarow', 'fourinarow']]
+          ['size', ['resetimagesize', 'oneinarow', 'twoinarow', 'fourinarow']]
           ['remove', ['removeMedia']]
         ]
       }
@@ -58,6 +66,7 @@ $ ->
             $("""a[data-image-id="#{image_id}"]""").remove()
       }
       buttons: {
+        resetimagesize: ResetImageSizeButton
         oneinarow: OneInARowButton
         twoinarow: TwoInARowButton
         fourinarow: FourInARowButton
