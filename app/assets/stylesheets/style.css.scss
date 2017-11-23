@@ -294,6 +294,7 @@ header nav {
           height: 340px;
         }
         img {
+          width: 614px;
           max-width: 614px;
         }
         h1 {
@@ -317,14 +318,14 @@ header nav {
           display: inline-block;
           vertical-align: top;
           line-height: normal;
-          &.one-in-a-row {
-            margin-right: 4px;
-          }
-          &.two-in-a-row:nth-child(even) {
+          &.two-in-a-row:first-child {
             margin-right: 4px;
           }
           &.four-in-a-row {
             margin-right: 4px;
+            &:last-child {
+              margin-right: 0;
+            }
           }
         }
       }
