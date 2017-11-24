@@ -1,35 +1,4 @@
-@font-face {
-  font-family: 'Franklin Gothic Book';
-  src: url('Franklin Gothic Book.eot'); /* IE9 Compat Modes */
-  src: url('Franklin Gothic Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('Franklin Gothic Book.woff') format('woff'), /* Modern Browsers */
-  url('Franklin Gothic Book.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('Franklin Gothic Book.svg#e95044bdf3d49bd024dea3f387a9411b') format('svg'); /* Legacy iOS */
-
-  font-style:   normal;
-  font-weight:  400;
-}
-
-@font-face {
-  font-family: 'Franklin Gothic Demi Cond';
-  src: url('Franklin Gothic Demi Cond.eot'); /* IE9 Compat Modes */
-  src: url('Franklin Gothic Demi Cond.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('Franklin Gothic Demi Cond.woff') format('woff'), /* Modern Browsers */
-  url('Franklin Gothic Demi Cond.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('Franklin Gothic Demi Cond.svg#0aeb5d0b702297ab4c74f46715f78009') format('svg'); /* Legacy iOS */
-
-  font-style:   normal;
-  font-weight:  400;
-}
-
-$white: white;
-$main-grey: #c5c5c5;
-$grey: #707070;
-$dark-grey: #4e4e4e;
-$black-grey: #404040;
-
-$grey-border: 5px solid $grey;
-$white-thin-border: 1px solid $white;
+@import 'variables';
 
 html, body {
   min-width: 1160px;
@@ -89,10 +58,8 @@ nav, .nav {
     margin-bottom: 6px;
   }
 }
-.info-block, p {
-  font-family: 'Franklin Gothic Book';
-}
 .info-block {
+  @include main-text;
   color: $white;
   .status {
     font-size: 0.7em;
@@ -110,8 +77,7 @@ nav, .nav {
   }
 }
 p {
-  font-size: 1em;
-  line-height: 1.5em;
+  @include main-text;
 }
 
 header {
@@ -287,81 +253,62 @@ header nav {
         border-bottom: 1px dashed #dedede;
         margin-bottom: 2em;
         padding-bottom: 2em;
+        @import "news";
         &:last-child {
           border: none;
         }
-        iframe {
-          width: 614px;
-          height: 340px;
-        }
-        img {
-          width: 614px;
-          max-width: 614px;
-        }
-        h1 {
-          color: #dedede;
-          font-size: 6em;
-          position: relative;
-          margin-bottom: 0.1em;
-          padding: 0;
-          span {
-            padding-bottom: 8px;
-            position: absolute;
-            left: 0;
-            font-size: 0.3em;
-            color: #404040;
-            bottom: 0;
-            font-family: 'Franklin Gothic Demi Cond';
-          }
-        }
-        a[data-fancybox] {
-          margin-right: 0;
-          display: inline-block;
-          vertical-align: top;
-          line-height: normal;
-          &.two-in-a-row:first-child {
-            margin-right: 4px;
-          }
-          &.four-in-a-row {
-            margin-right: 4px;
-            &:last-child {
-              margin-right: 0;
-            }
-          }
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
         }
       }
     }
-    .body {
-      border-spacing: 0px 10px;
-      &.table {
-        display: table;
-        width: 100%;
-      }
-      .row {
-        display: table-row;
-        .cell {
-          display: table-cell;
-          vertical-align: top;
-          h1 {
-            i {
-              color: #d84646;
-            }
-            &+p {
-              margin-top: -4em;
-            }
-          }
-          p {
-            padding-bottom: 1em;
-          }
+    article {
+      h1.date {
+        color: #dedede;
+        font-size: 6em;
+        position: relative;
+        margin-bottom: 0.1em;
+        padding: 0;
+        top: -0.14em;
+        span {
+          padding-bottom: 8px;
+          position: absolute;
+          left: 0;
+          font-size: 0.3em;
+          color: #404040;
+          bottom: 0;
+          font-family: 'Franklin Gothic Demi Cond';
         }
       }
-      img, iframe {
+      .body {
+        border-spacing: 0px 10px;
+        &.table {
+          display: table;
+          width: 100%;
+          .row {
+            display: table-row;
+            .cell {
+              display: table-cell;
+              vertical-align: top;
+              h1 {
+                i {
+                  color: #d84646;
+                }
+                & + p {
+                  margin-top: -4em;
+                }
+              }
+              p {
+                padding-bottom: 1em;
+              }
+            }
+          }
+        }
+      img {
         border: $grey-border;
       }
-      &:after {
-        content: "";
-        display: block;
-        clear: both;
       }
     }
   }

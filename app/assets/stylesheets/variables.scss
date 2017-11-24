@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Franklin Gothic Book';
+  src: url('Franklin Gothic Book.eot'); /* IE9 Compat Modes */
+  src: url('Franklin Gothic Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('Franklin Gothic Book.woff') format('woff'), /* Modern Browsers */
+  url('Franklin Gothic Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('Franklin Gothic Book.svg#e95044bdf3d49bd024dea3f387a9411b') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Franklin Gothic Demi Cond';
+  src: url('Franklin Gothic Demi Cond.eot'); /* IE9 Compat Modes */
+  src: url('Franklin Gothic Demi Cond.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('Franklin Gothic Demi Cond.woff') format('woff'), /* Modern Browsers */
+  url('Franklin Gothic Demi Cond.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('Franklin Gothic Demi Cond.svg#0aeb5d0b702297ab4c74f46715f78009') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+$white: white;
+$main-grey: #c5c5c5;
+$grey: #707070;
+$dark-grey: #4e4e4e;
+$black-grey: #404040;
+
+$grey-border: 5px solid $grey;
+$white-thin-border: 1px solid $white;
+
+@mixin main-text {
+  font-family: 'Franklin Gothic Book';
+  font-size: 1em;
+  line-height: 1.5em;
+}

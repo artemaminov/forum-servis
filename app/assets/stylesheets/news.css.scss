@@ -1,0 +1,25 @@
+@import "variables";
+
+a[data-fancybox] {
+  margin-right: 0;
+  display: inline-block;
+  vertical-align: top;
+  line-height: normal;
+  &.two-in-a-row:first-child {
+    margin-right: 4px;
+  }
+  &.four-in-a-row {
+    margin-right: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+iframe {
+  height: 340px;
+}
+img, iframe {
+  width: 614px;
+  max-width: 614px;
+  border: $grey-border;
+}

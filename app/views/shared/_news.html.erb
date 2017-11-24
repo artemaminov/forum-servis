@@ -1,7 +1,7 @@
 <% unless @news.empty? %>
   <% @news.each do |article| %>
     <article>
-      <h1><%= I18n.localize article.created_at, format: :forum %><span><%= article.title %></span></h1>
+      <h1 class="date"><%= I18n.localize article.created_at, format: :forum %><span><%= article.title %></span></h1>
       <div class="body"><%= article.content.html_safe %></div>
     </article>
   <% end %>
