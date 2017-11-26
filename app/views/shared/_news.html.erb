@@ -2,7 +2,10 @@
   <% @news.each do |article| %>
     <article>
       <h1 class="date"><%= I18n.localize article.created_at, format: :forum %><span><%= article.title %></span></h1>
-      <div class="body"><%= article.content.html_safe %></div>
+      <div class="body">
+        <%= article.content.html_safe %>
+        <p class="read-more"><a href="#" class="button">&#x2193; Развернуть</a></p>
+      </div>
     </article>
   <% end %>
 <% end %>

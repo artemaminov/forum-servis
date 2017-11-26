@@ -96,3 +96,22 @@ $ ->
     else
       margin = 0
     $('html, body').animate({ scrollTop: $(selector).offset().top + margin }, 'slow')
+
+  $("article .button").click () ->
+    totalHeight = 0
+    $el = $(this)
+    $p  = $el.parent()
+    $up = $p.parent()
+    $ps = $up.find("p:not('.read-more')")
+    $ps.each () ->
+      totalHeight += $(this).outerHeight()
+    $up
+      .css {
+        "height": $up.height(),
+        "max-height": 9999
+      }
+      .animate {
+        "height": totalHeight
+      }
+    $p.fadeOut()
+    return false
