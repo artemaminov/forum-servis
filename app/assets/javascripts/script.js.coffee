@@ -24,6 +24,15 @@ $ ->
     }
   }
 
+  openHeader = () ->
+    $('header').animate({height: '140px'}, 200, 'swing').css('overflow', 'visible')
+    $('header .navigation-svg').css({bottom: '305px'})
+    $('header .header').animate({top: '70px'}, 200, 'swing')
+  closeHeader = () ->
+    if $('header').hasClass('headroom--top')
+      $('header').animate({height: '305px'}, 200, 'swing').css('overflow', 'visible')
+      $('header .navigation-svg').css({bottom: '-39px'})
+      $('header .header').animate({top: '140px'}, 200, 'swing')
   $('.up').headroom {
     offset: 300
     tolerance: 100
@@ -39,13 +48,11 @@ $ ->
     offset: 300
     tolerance: 100
     onTop: () ->
-      $('header').animate({height: '305px'}, 200, 'swing').css('overflow', 'visible')
-      $('header .navigation-svg').css({bottom: '-39px'})
-      $('header .header').animate({top: '140px'}, 200, 'swing')
+      if $.fancybox.getInstance()
+        $(window).scrollTop(600)
+      closeHeader()
     onNotTop: () ->
-      $('header').animate({height: '140px'}, 200, 'swing').css('overflow', 'visible')
-      $('header .navigation-svg').css({bottom: '305px'})
-      $('header .header').animate({top: '70px'}, 200, 'swing')
+      openHeader()
   }
 
   $("[data-fancybox]").fancybox {
@@ -68,10 +75,12 @@ $ ->
       }
     }
     beforeShow: () ->
+      closeHeader()
       $('.fancybox-buttons').show()
       $('.fancybox-buttons').click () ->
         $.fancybox.getInstance().close()
     beforeClose: () ->
+      openHeader()
       $('.fancybox-buttons').hide()
       $('.fancybox-buttons').unbind('click')
   }
@@ -79,12 +88,14 @@ $ ->
   $('[data-fancybox="news-gallery"]').fancybox {
     toolbar: false
     infobar: false
-    margin: [200, 100]
+    margin: [250, 100]
     beforeShow: () ->
+      openHeader()
       $('.fancybox-buttons').show()
       $('.fancybox-buttons').click () ->
         $.fancybox.getInstance().close()
     beforeClose: () ->
+      closeHeader()
       $('.fancybox-buttons').hide()
       $('.fancybox-buttons').unbind('click')
   }
