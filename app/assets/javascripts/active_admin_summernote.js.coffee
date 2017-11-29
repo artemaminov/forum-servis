@@ -79,7 +79,7 @@ $ ->
     data.append 'Content-Type', file.type
     data.append 'attachment[filename]', file
     data.append 'attachment[attachable_type]', 'News'
-    $.ajax
+    $.ajax {
       data: data
       dataType: 'json'
       type: 'POST'
@@ -99,12 +99,14 @@ $ ->
         img.setAttribute 'id', data.id
         aImg.appendChild img
         $(that).summernote 'insertNode', aImg
+    }
 
   deleteFile = (file_id) ->
-    $.ajax
+    $.ajax {
       dataType: 'json'
       type: 'DELETE'
       url: "/admin/attachments/#{file_id}"
       cache: false
       contentType: false
       processData: false
+    }
