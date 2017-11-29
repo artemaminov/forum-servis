@@ -21,7 +21,7 @@ $ ->
       contents: '<i class="fa fa-child"/> 1/1',
       tooltip: 'Изображение во всю ширину',
       click: () ->
-        resize context, '614px', 'one-in-a-row'
+        resize context, '646px', 'one-in-a-row'
     }).render()
   TwoInARowButton = (context) ->
     ui = $.summernote.ui
@@ -29,7 +29,7 @@ $ ->
       contents: '<i class="fa fa-child"/> 1/2',
       tooltip: 'Изображение в половину ширины',
       click: () ->
-        resize context, '300px', 'two-in-a-row'
+        resize context, '320px', 'two-in-a-row'
     }).render()
   FourInARowButton = (context) ->
     ui = $.summernote.ui
@@ -37,7 +37,7 @@ $ ->
       contents: '<i class="fa fa-child"/> 1/4',
       tooltip: 'Изображение в 1/4 ширины',
       click: () ->
-        resize context, '143px', 'four-in-a-row'
+        resize context, '157px', 'four-in-a-row'
     }).render()
 
   $('[data-provider="summernote"]').each ->

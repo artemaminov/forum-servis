@@ -6,10 +6,10 @@ a[data-fancybox] {
   vertical-align: top;
   line-height: normal;
   &.two-in-a-row:first-child {
-    margin-right: 4px;
+    margin-right: 6px;
   }
   &.four-in-a-row {
-    margin-right: 4px;
+    margin-right: 6px;
     &:last-child {
       margin-right: 0;
     }
@@ -19,7 +19,6 @@ iframe {
   height: 340px;
 }
 img, iframe {
-  width: 614px;
-  max-width: 614px;
-  border: $grey-border;
+  width: 646px;
+  max-width: 646px;
 }

@@ -36,7 +36,7 @@ class AttachmentUploader < CarrierWave::Uploader::Base
     process :resize_to_limit => [380, 0]
     end
   version :news, if: :news_image? do
-    process :resize_to_limit => [614, 0]
+    process :resize_to_limit => [646, 0]
   end
   version :thumb do
     process :resize_to_limit => [100, 0]
