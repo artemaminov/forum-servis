@@ -41,6 +41,13 @@ $ ->
     onNotTop: () ->
       openHeader()
   }
+  $('.our-news').headroom {
+    offset: 650
+    tolerance: 100
+    classes: {
+      top: "locked"
+    }
+  }
 
   $("[data-fancybox]").fancybox {
     infobar: false
