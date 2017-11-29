@@ -204,7 +204,7 @@ header nav {
     &.world-offer {
       right: auto;
       left: 60px;
-      color: #c12e1e;
+      color: $red;
       text-align: left;
       text-decoration: underline;
     }
@@ -323,7 +323,7 @@ header nav {
               vertical-align: top;
               h1 {
                 i {
-                  color: #d84646;
+                  color: $red;
                 }
                 & + p {
                   margin-top: -4em;
@@ -335,6 +335,7 @@ header nav {
             }
           }
         }
+
       }
     }
   }
@@ -428,7 +429,7 @@ footer {
     .copyright {
       font-size: 0.7em;
       width: 16em;
-      border-top: 1px solid #ffd204;
+      border-top: 1px solid $yellow;
       padding-top: 4px;
       position: absolute;
       bottom: 10px;
