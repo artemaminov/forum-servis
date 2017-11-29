@@ -6,7 +6,6 @@ $ ->
     responsive: true,
     swipe: true
   }
-
   $('#offers-carousel').carouFredSel {
     auto: {
       timeoutDuration: 12000
@@ -24,22 +23,10 @@ $ ->
     }
   }
 
-  openHeader = () ->
-    $('header').animate({height: '140px'}, 200, 'swing').css('overflow', 'visible')
-    $('header .navigation-svg').css({bottom: '305px'})
-    $('header .header').animate({top: '70px'}, 200, 'swing')
-  closeHeader = () ->
-    if $('header').hasClass('headroom--top')
-      $('header').animate({height: '305px'}, 200, 'swing').css('overflow', 'visible')
-      $('header .navigation-svg').css({bottom: '-39px'})
-      $('header .header').animate({top: '140px'}, 200, 'swing')
   $('.up').headroom {
     offset: 300
     tolerance: 100
     classes: {
-      initial: ""
-      pinned: ""
-      unpinned: ""
       top: "fadeOutDown"
       notTop: "fadeInUp"
     }
@@ -126,3 +113,13 @@ $ ->
       }
     $p.fadeOut()
     return false
+
+  openHeader = () ->
+    $('header').animate({height: '140px'}, 200, 'swing').css('overflow', 'visible')
+    $('header .navigation-svg').css({bottom: '305px'})
+    $('header .header').animate({top: '70px'}, 200, 'swing')
+  closeHeader = () ->
+    if $('header').hasClass('headroom--top')
+      $('header').animate({height: '305px'}, 200, 'swing').css('overflow', 'visible')
+      $('header .navigation-svg').css({bottom: '-39px'})
+      $('header .header').animate({top: '140px'}, 200, 'swing')
