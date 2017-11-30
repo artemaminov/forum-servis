@@ -122,11 +122,11 @@ $ ->
     return false
 
   openHeader = () ->
-    $('header').animate({height: '140px'}, 200, 'swing').css('overflow', 'visible')
+    $('header').animate({height: '110px'}, 200, 'swing').css('overflow', 'visible')
     $('header .navigation-svg').css({bottom: '305px'})
-    $('header .header').animate({top: '70px'}, 200, 'swing')
+    $('header .header').animate({top: '76px'}, 200, 'swing')
   closeHeader = () ->
     if $('header').hasClass('headroom--top')
-      $('header').animate({height: '305px'}, 200, 'swing').css('overflow', 'visible')
+      $('header').animate({height: '235px'}, 200, 'swing').css('overflow', 'visible')
       $('header .navigation-svg').css({bottom: '-39px'})
-      $('header .header').animate({top: '140px'}, 200, 'swing')
+      $('header .header').animate({top: '115px'}, 200, 'swing')

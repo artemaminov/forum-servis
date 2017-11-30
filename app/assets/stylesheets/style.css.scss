@@ -38,12 +38,13 @@ h1, h2, h3 {
   }
 }
 h1 {
-  padding: 0.5em 0;
+  padding: 0;
   font-size: 3em;
   position: relative;
   z-index: 2;
   &.section-title {
     margin-bottom: 0;
+    padding-top: .6em;
   }
 }
 h2 {
@@ -51,6 +52,7 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
+  margin-bottom: .5em;
 }
 nav, .nav {
   font-size: 1.3em;
@@ -58,30 +60,12 @@ nav, .nav {
     margin-bottom: 6px;
   }
 }
-.info-block {
-  @include main-text;
-  color: $white;
-  .status {
-    font-size: 0.7em;
-    color: $white;
-  }
-  .address {
-    font-size: 1em;
-    margin-top: -0.5em;
-    color: $white;
-  }
-  .phone {
-    font-size: 2em;
-    font-weight: bold;
-    color: $white;
-  }
-}
 p {
   @include main-text;
 }
 
 header {
-  height: 305px;
+  height: 235px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -89,22 +73,35 @@ header {
   border-bottom: 10px solid $grey;
   color: $white;
   z-index: 100000;
+  p {
+    line-height: initial;
+  }
   .header {
     position: absolute;
-    top: 140px;
+    top: 115px;
     left: 50%;
     margin: -50px 0 0 -437px;
+    .status, .address {
+      font-size: 0.8em;
+      color: $white;
+    }
+    .phone {
+      font-size: 2em;
+      font-weight: bold;
+      color: $white;
+    }
     .info-block {
+      @include main-text;
+      color: $white;
       margin-left: 55px;
       position: relative;
-      top: -17px;
-      height: 125px;
-      padding-top: 10px;
+      height: 90px;
+      top: -1em;
     }
   }
   .BRP-logo {
     position: absolute;
-    top: -12px;
+    top: -16px;
     right: -100px;
   }
   .fancybox-buttons {
@@ -179,7 +176,7 @@ header nav {
   z-index: -1;
   overflow: hidden;
   background-color: $black-grey;
-  padding-top: 305px;
+  padding-top: 244px;
   .item {
     display: inline-block;
     position: relative;
