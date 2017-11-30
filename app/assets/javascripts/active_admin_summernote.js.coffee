@@ -42,7 +42,7 @@ $ ->
 
   $('[data-provider="summernote"]').each ->
     $(this).summernote({
-      width: 700
+      width: 740
       lang: 'ru-RU'
       shortcuts: false
       toolbar: [
