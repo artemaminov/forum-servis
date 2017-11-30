@@ -78,4 +78,4 @@ ru:
   time:
     am: утра
     formats:
-      forum: ! '%d%b%y'
+      forum: ! '%d %B %y'
