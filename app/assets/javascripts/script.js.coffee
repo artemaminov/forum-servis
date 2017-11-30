@@ -25,7 +25,7 @@ $ ->
 
   $('.up').headroom {
     offset: 300
-    tolerance: 100
+    tolerance: 0
     classes: {
       top: "fadeOutDown"
       notTop: "fadeInUp"
@@ -33,7 +33,7 @@ $ ->
   }
   $('header').headroom {
     offset: 300
-    tolerance: 100
+    tolerance: 0
     onTop: () ->
       if $.fancybox.getInstance()
         $(window).scrollTop(600)
@@ -43,7 +43,7 @@ $ ->
   }
   $('.our-news').headroom {
     offset: 650
-    tolerance: 100
+    tolerance : 0
     classes: {
       top: "locked"
     }
