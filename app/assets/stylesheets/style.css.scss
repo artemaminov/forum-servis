@@ -254,16 +254,57 @@ header nav {
       height: 979px;
       overflow-x: hidden;
       overflow-y: scroll;
-      padding-right: 30px;
+      //padding-right: 30px;
+      //background-color: #e2e1e1;
+      //padding: 20px;
       article {
         //border-bottom: 1px dashed $light-grey;
         margin-bottom: 2em;
         //padding-bottom: 2em;
         @import "news";
+        h1.date {
+          color: #dcdcdc; //#c5c5c5;
+          font-size: 6em;
+          position: relative;
+          margin-bottom: -0.1em;
+          padding: 0;
+          top: -0.14em;
+          border-bottom: 1px solid #c5c5c5;
+          span {
+            padding-bottom: 8px;
+            padding-left: 8px;
+            position: absolute;
+            left: 0;
+            font-size: 0.3em;
+            color: #404040;
+            bottom: 0;
+            font-family: 'Franklin Gothic Demi Cond';
+            &:before {
+              content: "┃";
+            }
+          }
+        }
+        h3 {
+          //font-family: 'Franklin Gothic Demi Cond';
+          //text-transform: uppercase;
+          //color: $black-grey;
+          //display: inline-block;
+          position: relative;
+          padding-bottom: 1em;
+          span {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: .5em;
+            border-bottom: 1px solid $main-grey;
+            padding-right: 30em;
+            padding-bottom: 0.5em;
+          }
+        }
         .body {
           max-height: 15em;
-          border-left: 3px solid $yellow;
-          padding-left: 20px;
+          //border-left: 3px solid $yellow;
+          //padding-left: 20px;
         }
         &:last-child {
           border: none;
@@ -276,19 +317,6 @@ header nav {
       }
     }
     article {
-      h2 {
-        font-family: 'Franklin Gothic Demi Cond';
-        text-transform: uppercase;
-        color: $black-grey;
-        display: inline-block;
-        position: relative;
-        span {
-          position: absolute;
-          left: 0;
-          bottom: -1.4em;
-          font-size: .5em;
-        }
-      }
       .body {
         border-spacing: 0px 10px;
         position: relative;
@@ -308,7 +336,7 @@ header nav {
           //background: linear-gradient(135deg, transparent 91%, #C5C5C5 91%) 0px 76px, linear-gradient(-135deg, transparent 91%, #C5C5C5 91%) 0px 76px;
           //background-size: 14px 60px, 14px 60px;
           a {
-            padding-left: 18px;
+            //padding-left: 18px;
           }
         }
         &.table {

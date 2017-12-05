@@ -79,3 +79,4 @@ ru:
     am: утра
     formats:
       forum: ! '%d %B %y'
+      forum_short: ! '%d%b%y'
