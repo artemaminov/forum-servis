@@ -106,7 +106,7 @@ header {
   }
   .fancybox-buttons {
     position: absolute;
-    top: 150px;
+    top: 120px;
     right: 0;
     left: 0;
     z-index: 100001;
@@ -572,4 +572,12 @@ main, footer {
 
 .locked {
   overflow: hidden !important;
+
+.fancybox-navigation .fancybox-button--arrow_right {
+  right: 40px;
+}
+.fancybox-navigation .fancybox-button--arrow_left {
+  left: 40px;
+}
+
 }
