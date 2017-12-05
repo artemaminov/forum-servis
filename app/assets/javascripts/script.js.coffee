@@ -42,7 +42,7 @@ $ ->
       openHeader()
   }
   $('.our-news').headroom {
-    offset: 670
+    offset: 610
     tolerance : 0
     classes: {
       top: "locked"
