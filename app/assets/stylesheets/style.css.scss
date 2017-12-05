@@ -571,7 +571,9 @@ main, footer {
 }
 
 .locked {
-  overflow: hidden !important;
+  overflow-y: hidden !important;
+  margin-right: 5px;
+}
 
 .fancybox-navigation .fancybox-button--arrow_right {
   right: 40px;
@@ -580,4 +582,36 @@ main, footer {
   left: 40px;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffd205;
+  border: 92px none #ffffff;
+  border-radius: 26px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd205;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #d6b002;
+}
+::-webkit-scrollbar-track {
+  background: #707070;
+  border: 53px none #ffffff;
+  border-radius: 26px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #707070;
+}
+::-webkit-scrollbar-track:active {
+  background: #4e4e4e;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
