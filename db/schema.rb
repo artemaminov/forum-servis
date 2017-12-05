@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(:version => 20171022141750) do
 
   create_table "carousels", :force => true do |t|
     t.string   "header"
-    t.string   "body"
+    t.text     "body"
     t.string   "banner"
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
@@ -64,6 +64,28 @@ ActiveRecord::Schema.define(:version => 20171022141750) do
     t.string   "link"
     t.boolean  "new_window"
   end
+
+  create_table "images", :force => true do |t|
+    t.string   "filename"
+    t.string   "title"
+    t.integer  "item_id",                       :null => false
+    t.boolean  "cover",      :default => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "items", :force => true do |t|
+    t.integer  "position"
+    t.string   "title",       :null => false
+    t.integer  "cover"
+    t.text     "description"
+    t.integer  "price"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "ancestry"
+  end
+
+  add_index "items", ["ancestry"], :name => "index_items_on_ancestry"
 
   create_table "news", :force => true do |t|
     t.string   "title"
@@ -77,5 +99,28 @@ ActiveRecord::Schema.define(:version => 20171022141750) do
     t.datetime "updated_at", :null => false
     t.string   "filename"
   end
+
+  create_table "spec_values", :force => true do |t|
+    t.integer  "item_id"
+    t.integer  "spec_id"
+    t.string   "value"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "spec_values", ["item_id"], :name => "index_spec_values_on_item_id"
+  add_index "spec_values", ["spec_id"], :name => "index_spec_values_on_spec_id"
+
+  create_table "specs", :force => true do |t|
+    t.string   "title"
+    t.string   "spec"
+    t.integer  "position"
+    t.string   "ancestry"
+    t.integer  "item_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "specs", ["ancestry"], :name => "index_specs_on_ancestry"
 
 end
