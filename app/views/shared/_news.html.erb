@@ -2,7 +2,7 @@
   <% @news.each do |article| %>
     <article>
       <!--TODO Choose one-->
-      <h1 class="date"><%= I18n.localize article.created_at, format: :forum_short %><span><%= article.title %></span></h1>
+      <h3 class="date"><%#= I18n.localize article.created_at, format: :forum_short %><span><%= article.title %></span></h3>
       <!--<h3><%= article.title %><span class="date"><%= I18n.localize article.created_at, format: :forum %></span></h3>-->
       <div class="body">
         <%= article.content.html_safe %>
