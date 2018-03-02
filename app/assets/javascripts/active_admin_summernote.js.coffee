@@ -46,7 +46,7 @@ $ ->
       lang: 'ru-RU'
       shortcuts: false
       toolbar: [
-        ['style', ['bold', 'italic', 'underline', 'strikethrough', 'clear']],
+        ['style', ['bold', 'italic', 'underline', 'strikethrough', 'cleaner']],
         ['para', ['ul', 'ol']],
         ['insert', ['picture', 'link', 'video']],
         ['misc', ['fullscreen', 'codeview', 'undo', 'redo']]
@@ -71,6 +71,18 @@ $ ->
         oneinarow: OneInARowButton
         twoinarow: TwoInARowButton
         fourinarow: FourInARowButton
+      }
+      cleaner:{
+        notTime: 0
+        action: 'both'
+        newline: '<br>'
+        notStyle: 'position:absolute;top:0;left:0;right:0'
+        icon: '<i class="note-icon-eraser"></i>'
+        keepHtml: false
+        keepOnlyTags: ['<p>', '<br>', '<ul>', '<li>', '<b>', '<u>', '<i>', '<strike>', '<a>']
+        keepClasses: false
+        badTags: ['style', 'script', 'applet', 'embed', 'noframes', 'noscript', 'html']
+        badAttributes: ['style', 'start']
       }
     })
 

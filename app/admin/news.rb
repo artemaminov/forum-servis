@@ -15,6 +15,7 @@ ActiveAdmin.register News do
   form do |f|
     within @head do
       script :src => javascript_path('active_admin_summernote.js'), :type => "text/javascript"
+      script :src => javascript_path('summernote-cleaner/summernote-cleaner.js'), :type => "text/javascript"
     end
     f.inputs 'Новости' do
       f.input :title
