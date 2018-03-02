@@ -1,0 +1,17 @@
+{
+  "name": "forum-servis",
+  "homepage": "https://github.com/artemaminov/forum-servis",
+  "authors": [
+    "artemaminov <artemaminov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
