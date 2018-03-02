@@ -172,13 +172,13 @@
     <div class="map">
       <div id="gis-map"></div>
     </div>
-    <div class="card">
-      <div class="text">
-        <p>+7 (3452) 68-55-44</p>
-        <p>г. Тюмень, ул. Дачная, 2Б</p>
-        <p>salon@forum-servis.ru</p>
-      </div>
-    </div>
+    <!--<div class="card">-->
+      <!--<div class="text">-->
+        <!--<p>+7 (3452) 68-55-44</p>-->
+        <!--<p>г. Тюмень, ул. Дачная, 2Б</p>-->
+        <!--<p>salon@forum-servis.ru</p>-->
+      <!--</div>-->
+    <!--</div>-->
   </section>
 </main>
 
@@ -204,33 +204,70 @@
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
 <!-- {/literal} END JIVOSITE CODE -->
 
-<script type="text/javascript" src="http://maps.api.2gis.ru/1.0"></script>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 <script type="text/javascript">
-  DG.autoload(function() {
-    var myMap = new DG.Map('gis-map');
-    myMap.setCenter(new DG.GeoPoint(65.666528, 57.1580),13);
-    myMap.controls.add(new DG.Controls.Zoom());
-    var b1 = new DG.Balloons.Common({
-      geoPoint: new DG.GeoPoint(65.666528, 57.164327),
-      contentHtml: 'ул. Дачная, 2Б'
+  DG.then(function() {
+    var map,
+        icon,
+        popUp;
+    map = DG.map('gis-map', {
+        center: [57.133625, 65.594825],
+        zoom: 12,
+        fullscreenControl: false,
+        closePopupOnClick: false,
+        scrollWheelZoom: false
     });
-    var m1 = new DG.Markers.Common({
-      geoPoint: new DG.GeoPoint(65.666528, 57.164327),
-      icon: new DG.Icon(
-          'assets/map-pin.png',
-          new DG.Size(48, 64)
-      ),
-      clickCallback: function() {
-        if (! myMap.balloons.getDefaultGroup().contains(b1)) {
-          myMap.balloons.add(b1);
-        } else {
-          b1.show();
-        }
-      }
+    icon = DG.icon({
+        iconUrl: 'assets/map-pin.png',
+        iconSize: [48, 64],
+        iconAnchor: [24, 64],
+        popupAnchor: [0, -8]
     });
+    popUp1 = '<strong>BRP</strong>&nbsp;Центр&nbsp;Тюмень<br/><br/>' +
+        'г. Тюмень<br/>' +
+        'ул. Дачная, 2Б<br/>' +
+        'тел.: +7 (3452) 68-55-44';
+    popUp2 = '<strong>BRP</strong>&nbsp;Центр&nbsp;Тюмень<br/><br/>' +
+        'г. Тюмень, Комарово<br/>' +
+        'ул. Уездная, 144<br/>' +
+        'тел.: +7 (3452) 69-60-00';
+    DG.marker([57.1644, 65.66655], {
+        icon: icon
+    }).addTo(map).bindPopup(popUp1);
+    DG.marker([57.10285, 65.52310], {
+        icon: icon
+    }).addTo(map).bindPopup(popUp2);
+    // FSDivIcon = DG.divIcon({
+    //     iconSize: [48, 64],
+    //     html: 'ул. Дачная, 2Б'
+    // });
+    // DG.marker([57.164293, 65.666814], {
+    //     icon: FSDivIcon
+    // }).addTo(FSMap);
 
-    myMap.markers.add(m1);
-    myMap.disableScrollZoom();
+    // myMap.setCenter(new DG.GeoPoint(65.666528, 57.1580),13);
+    // myMap.controls.add(new DG.Controls.Zoom());
+    // b1 = new DG.Balloons.Common({
+    //   geoPoint: new DG.GeoPoint(65.666528, 57.164327),
+    //   contentHtml: 'ул. Дачная, 2Б'
+    // });
+    // m1 = new DG.Markers.Common({
+    //   geoPoint: new DG.GeoPoint(65.666528, 57.164327),
+    //   icon: new DG.Icon(
+    //       'assets/map-pin.png',
+    //       new DG.Size(48, 64)
+    //   ),
+    //   clickCallback: function() {
+    //     if (! myMap.balloons.getDefaultGroup().contains(b1)) {
+    //       myMap.balloons.add(b1);
+    //     } else {
+    //       b1.show();
+    //     }
+    //   }
+    // });
+
+    // FSMap.markers.add(m1);
+    // FSMap.disableScrollZoom();
   });
 </script>
 </body>
