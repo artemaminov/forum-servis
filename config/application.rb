@@ -57,7 +57,7 @@ module ForumServis
     config.assets.enabled = true
     config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
     config.assets.initialize_on_precompile = false
-    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+    # config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
