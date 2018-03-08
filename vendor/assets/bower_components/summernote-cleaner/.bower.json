@@ -23,14 +23,13 @@
     "url": "git://github.com/DiemenDesign/summernote-cleaner.git"
   },
   "homepage": "https://github.com/DiemenDesign/summernote-cleaner",
-  "_release": "50fcdf6225",
+  "_release": "d3d96aaf9c",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "50fcdf62252e8658dd335ae82d38f63ce3abc1ac"
+    "commit": "d3d96aaf9c480cd4c370ee11e8ba69d0e4e1e222"
   },
   "_source": "https://github.com/DiemenDesign/summernote-cleaner.git",
   "_target": "*",
-  "_originalSource": "summernote-cleaner",
-  "_direct": true
+  "_originalSource": "summernote-cleaner"
 }

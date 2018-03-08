@@ -11,8 +11,8 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery.min
-//= require jquery.headroom.min
-//= require jquery.carouFredSel-6.2.1-packed
-//= require headroom.min
-//= require jquery.fancybox.min
+//= require headroom/dist/headroom
+//= require headroom/src/jQuery.headroom.js
+//= require jquery-carouFredSel/jquery.carouFredSel-6.2.1.js
+//= require fancybox/dist/jquery.fancybox.js
 //= require script

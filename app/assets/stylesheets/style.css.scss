@@ -110,6 +110,8 @@ header {
       transform-style: preserve-3d;
       animation: spin 15s ease-in-out infinite;
       .office1, .office2 {
+        -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
       }
       .office1 {

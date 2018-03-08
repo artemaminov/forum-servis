@@ -52,6 +52,7 @@ gem 'bootstrap-sass', '~> 3.1.1'
 group :development do
   gem 'capistrano', '~> 3.6'
   gem 'capistrano-rails', '~> 1.3'
+  gem 'capistrano-bower'
   gem 'capistrano-rbenv'
   gem 'capistrano-passenger'
   gem 'capistrano-rbenv-vars'

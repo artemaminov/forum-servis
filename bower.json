@@ -12,6 +12,13 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ]
+    "tests",
+    "vendor/assets/bower_components"
+  ],
+  "dependencies": {
+    "summernote-cleaner": "*",
+    "fancybox": "^3.2.5",
+    "jquery-carouFredSel": "*",
+    "headroom": "^1.0.3"
+  }
 }
