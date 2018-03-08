@@ -21,3 +21,4 @@
 db-backup
 *.codekit3
 /db-backup-local
+/vendor/assets/bower_components
