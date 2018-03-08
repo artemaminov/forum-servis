@@ -46,7 +46,7 @@ set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rben
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :rbenv_roles, :all # default value
 
-set :bower_flags, '--quiet --config.interactive=false'
-set :bower_roles, :deploy
-set :bower_target_path, nil
+set :bower_flags, nil
+set :bower_roles, :web
+set :bower_target_path, "#{release_path}"
 set :bower_bin, :bower
