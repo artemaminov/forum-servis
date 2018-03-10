@@ -82,7 +82,7 @@ $ ->
   $('[data-fancybox="news-gallery"]').fancybox {
     toolbar: false
     infobar: false
-    margin: [250, 100]
+    margin: [190, 0, 50, 0]
     beforeShow: () ->
       openHeader()
       $('.fancybox-buttons').show()
