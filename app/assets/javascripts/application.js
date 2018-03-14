@@ -10,7 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery.min
+//= require jquery
+//= require jquery_ujs
 //= require headroom/dist/headroom
 //= require headroom/src/jQuery.headroom.js
 //= require jquery-carouFredSel/jquery.carouFredSel-6.2.1.js
