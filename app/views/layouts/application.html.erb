@@ -64,7 +64,10 @@
       <div class="fleft header">
         <h2>Наши<span> Новости</span></h2>
         <div class="our-news">
-          <%= render partial: 'shared/news' %>
+          <section id="news">
+            <%= render partial: 'shared/news' %>
+          </section>
+          <%= render partial: 'shared/next_news_button' %>
         </div>
       </div>
       <aside class="fright header">
