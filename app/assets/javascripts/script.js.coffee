@@ -102,23 +102,31 @@ $ ->
       margin = 0
     $('html, body').animate({ scrollTop: $(selector).offset().top + margin }, 'slow')
 
-  $("article .button").click () ->
+  $("#news").on "click", ".button", () ->
     totalHeight = 0
     $el = $(this)
     $p  = $el.parent()
     $up = $p.parent()
-    $ps = $up.find("p:not('.read-more')")
+    $ps = $up.find("p")
     $ps.each () ->
       totalHeight += $(this).outerHeight()
-    $up
-      .css {
+    $up.css {
         "height": $up.height(),
         "max-height": 9999
       }
-      .animate {
+    if $el.hasClass("closed")
+      initHeight = $up.height()
+      $up.data("initHeight", initHeight)
+      $up.animate {
         "height": totalHeight
       }
-    $p.fadeOut()
+      $el.html("&#x2191; Свернуть")
+    else
+      $up.animate {
+        "height": $up.data("initHeight")
+      }
+      $el.html("&#x2193; Развернуть")
+    $el.toggleClass("closed")
     return false
 
   openHeader = () ->
