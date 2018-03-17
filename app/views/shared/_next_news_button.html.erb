@@ -1,3 +1,5 @@
 <% unless @news.last_one? %>
-  <%= link_to "Загрузить еще...", home_index_path(news: @news.last.id), remote: true  %>
+  <p class="load-more">
+    <%= link_to "Читать еще...", home_index_path(news: @news.last.id), remote: true %>
+  </p>
 <% end %>
