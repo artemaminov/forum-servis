@@ -76,6 +76,9 @@ header {
   p {
     line-height: initial;
   }
+  a {
+    color: $white
+  }
   .header {
     position: absolute;
     top: 108px;
@@ -84,14 +87,16 @@ header {
     .status {
       display: inline-block;
       vertical-align: bottom;
-      padding-right: 7em;
     }
     .status, .address {
       font-size: 0.8em;
       color: $white;
     }
     .uptolike-buttons.no-touch.innerHTML {
-      display: inline-block;
+      display: block;
+      position: absolute;
+      right: 0;
+      z-index: 1;
     }
     .phone {
       font-size: 2em;
@@ -486,13 +491,13 @@ footer {
     }
     .logo-spaceheads {
       position: absolute;
-      bottom: 10px;
+      bottom: 5px;
       right: 40px;
     }
     .f7_full_logo {
       position: absolute;
       left: 50%;
-      bottom: 100px;
+      bottom: 11px;
       margin-left: -116px;
       a {
         display: block;
@@ -504,13 +509,33 @@ footer {
 }
 
 .up {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  right: 50%;
-  z-index: 1000;
-  margin-right: -53px;
   cursor: pointer;
+  display: block;
+  position: relative;
+  top: 20px;
+  h1 .brp {
+    background: url("up-arrows.jpg") repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-text-fill-color: transparent;
+  }
+  &:hover h1 .brp {
+    -webkit-animation: aitf 1s linear infinite;
+    animation: aitf 1s linear infinite;
+  }
+}
+
+@-webkit-keyframes aitf {
+  0% { background-position: 50% 0%; }
+  100% { background-position: 50% 100%; }
+}
+@keyframes aitf {
+  0% { background-position: 50% 0%; }
+  100% { background-position: 50% 100%; }
 }
 
 .hidden {
@@ -519,6 +544,7 @@ footer {
 
 .fleft {
   float: left;
+  position: relative;
 }
 .fright {
   float: right;

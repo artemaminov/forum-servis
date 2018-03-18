@@ -94,7 +94,7 @@ $ ->
       $('.fancybox-buttons').unbind('click')
   }
 
-  $('.sprites-v2.up.animated').click (event)->
+  $('.up').click (event)->
     selector = $(this).data('scrollto')
     if selector == '#top'
       margin = -5

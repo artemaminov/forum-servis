@@ -1,53 +1,28 @@
 /**
  * Created with TexturePacker http://www.codeandweb.com/texturepacker
  *
- * SmartUpdateHash: $TexturePacker:SmartUpdate:4985d9c0fac742b82672145c6d6b3016:b6defd1caefa1551957db04169273fa6:acbb9a391e717371817054b7bacf3992$
+ * SmartUpdateHash: $TexturePacker:SmartUpdate:04115221c93632f54f97fcb39f47e7e0:0b4fa7554cd60ae30a388028f6cdc8e8:acbb9a391e717371817054b7bacf3992$
  */
 
 .sprites-v2 {
   display:inline-block;
   overflow:hidden;
-  background:url('sprites-v2.png?$TexturePacker:SmartUpdate:4985d9c0fac742b82672145c6d6b3016:b6defd1caefa1551957db04169273fa6:acbb9a391e717371817054b7bacf3992$') no-repeat;
+  background:url('sprites-v2.png?$TexturePacker:SmartUpdate:04115221c93632f54f97fcb39f47e7e0:0b4fa7554cd60ae30a388028f6cdc8e8:acbb9a391e717371817054b7bacf3992$') no-repeat;
 }
 
-.sprites-v2.snowmobile2 {
-  width:186px;
-  height:133px;
-  background-position: -1px -1px;
-}
 .sprites-v2.f7_full_logo {
   width:233px;
   height:67px;
-  background-position: -189px -1px;
-}
-.sprites-v2.roadster2 {
-  width:183px;
-  height:103px;
-  background-position: -1px -136px;
-}
-.sprites-v2.atv2 {
-  width:160px;
-  height:119px;
-  background-position: -189px -70px;
-}
-.sprites-v2.scooter2 {
-  width:144px;
-  height:91px;
-  background-position: -351px -70px;
+  background-position: -1px -1px;
 }
 .sprites-v2.logo-spaceheads {
   width:178px;
   height:34px;
-  background-position: -186px -191px;
-}
-.sprites-v2.up {
-  width:104px;
-  height:78px;
-  background-position: -366px -163px;
+  background-position: -1px -70px;
 }
 .sprites-v2.BRP-logo {
   width:66px;
   height:66px;
-  background-position: -424px -1px;
+  background-position: -236px -1px;
 }
 
