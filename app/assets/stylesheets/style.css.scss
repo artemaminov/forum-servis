@@ -6,7 +6,7 @@ html, body {
   background-color: $main-grey;
 }
 
-section {
+main > section {
   margin-top: 30px;
   position: relative;
 }
@@ -286,7 +286,6 @@ header nav {
   .header {
     &.fleft {
       width: 680px;
-      //border-right: $white-thin-border;
     }
     .our-news {
       height: 979px;
@@ -427,38 +426,6 @@ header nav {
       height: 100%;
     }
   }
-  .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -240px;
-    width: 480px;
-    background-color: $white;
-    text-align: center;
-    height: 210px;
-    border: 8px solid $grey;
-    z-index: 10000;
-    .text {
-      margin: auto;
-      position: absolute;
-      top: 25px;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      p {
-        font-family: 'Franklin Gothic Demi Cond';
-        font-size: 2em;
-        &:first-child {
-          margin-bottom: 19px;
-          font-size: 2.5em;
-        }
-        &:last-child {
-          margin-top: 0;
-        }
-      }
-    }
-  }
 }
 
 footer {
@@ -514,7 +481,7 @@ footer {
   position: relative;
   top: 20px;
   h1 .brp {
-    background: url("up-arrows.jpg") repeat-y;
+    background: url(up-arrows.jpg) repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-transform: translate3d(0,0,0);
