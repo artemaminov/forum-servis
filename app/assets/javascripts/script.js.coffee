@@ -64,7 +64,7 @@ $ ->
         'height': '100%'
         'max-height': '100%'
         'margin': '0'
-        'padding-top': '99px'
+        'padding-top': '164px'
         'background-color': 'transparent'
       }
     }
