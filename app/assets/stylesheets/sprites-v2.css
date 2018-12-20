@@ -1,28 +1,23 @@
 /**
  * Created with TexturePacker http://www.codeandweb.com/texturepacker
  *
- * SmartUpdateHash: $TexturePacker:SmartUpdate:04115221c93632f54f97fcb39f47e7e0:0b4fa7554cd60ae30a388028f6cdc8e8:acbb9a391e717371817054b7bacf3992$
+ * SmartUpdateHash: $TexturePacker:SmartUpdate:b1431a57f8e55e8d3efef7afdd1bb4e4:4ce0247b87536bff2305865fe827c11b:acbb9a391e717371817054b7bacf3992$
  */
 
 .sprites-v2 {
   display:inline-block;
   overflow:hidden;
-  background:url('sprites-v2.png?$TexturePacker:SmartUpdate:04115221c93632f54f97fcb39f47e7e0:0b4fa7554cd60ae30a388028f6cdc8e8:acbb9a391e717371817054b7bacf3992$') no-repeat;
+  background:url('sprites-v2.png?$TexturePacker:SmartUpdate:b1431a57f8e55e8d3efef7afdd1bb4e4:4ce0247b87536bff2305865fe827c11b:acbb9a391e717371817054b7bacf3992$') no-repeat;
 }
 
-.sprites-v2.f7_full_logo {
-  width:233px;
-  height:67px;
+.sprites-v2.BRP-logo {
+  width:66px;
+  height:66px;
   background-position: -1px -1px;
 }
 .sprites-v2.logo-spaceheads {
   width:178px;
   height:34px;
-  background-position: -1px -70px;
-}
-.sprites-v2.BRP-logo {
-  width:66px;
-  height:66px;
-  background-position: -236px -1px;
+  background-position: -69px -1px;
 }
 
