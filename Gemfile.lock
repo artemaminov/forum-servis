@@ -261,7 +261,9 @@ GEM
       activesupport (~> 3.1)
       polyamorous (~> 0.5.0)
     mime-types (1.25.1)
-    mimemagic (0.3.2)
+    mimemagic (0.4.3)
+      nokogiri (~> 1)
+      rake
     mini_portile2 (2.1.0)
     multi_json (1.12.1)
     net-scp (1.2.1)
@@ -335,7 +337,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     trollop (2.1.2)
-    tzinfo (0.3.52)
+    tzinfo (0.3.61)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
     warden (1.2.7)
